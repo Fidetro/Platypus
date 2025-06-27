@@ -141,7 +141,7 @@
     NSMutableAttributedString *cmdString = [[NSMutableAttributedString alloc] initWithString:[interpreterTextField stringValue] attributes:defaultAttrs];
     
     // Interpreter args
-    for (NSUInteger i = 0; i < [interpreterArgs count]; i++)
+    for (NSInteger i = 0; i < [interpreterArgs count]; i++)
     {
         NSString *a = [NSString stringWithFormat:@" %@", interpreterArgs[i]];
         NSMutableDictionary *attrs = [defaultAttrs mutableCopy];
@@ -175,7 +175,7 @@
     [cmdString appendAttributedString:scriptString];
     
     // Script args
-    for (NSUInteger i = 0; i < [scriptArgs count]; i++)
+    for (NSInteger i = 0; i < [scriptArgs count]; i++)
     {
         NSString *a = [NSString stringWithFormat:@"%@ ", scriptArgs[i]];
         NSMutableDictionary *attrs = [defaultAttrs mutableCopy];

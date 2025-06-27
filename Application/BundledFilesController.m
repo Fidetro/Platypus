@@ -292,7 +292,7 @@
     NSMutableString *copyStr = [[NSMutableString alloc] initWithString:@""];
     NSIndexSet *selectedItems = [tableView selectedRowIndexes];
     
-    for (NSUInteger i = 0; i < [files count]; i++) {
+    for (NSInteger i = 0; i < [files count]; i++) {
         if ([selectedItems containsIndex:i]) {
             NSDictionary *fileInfoDict = files[i];
             NSString *name = basenameOnly ? fileInfoDict[@"Path"] : [fileInfoDict[@"Path"] lastPathComponent];
@@ -339,7 +339,7 @@
 
 - (IBAction)revealSelectedFilesInFinder:(id)sender {
     NSIndexSet *selectedItems = [tableView selectedRowIndexes];
-    for (NSUInteger i = 0; i < [files count]; i++) {
+    for (NSInteger i = 0; i < [files count]; i++) {
         if ([selectedItems containsIndex:i]) {
             [self revealInFinder:i];
         }
@@ -348,7 +348,7 @@
 
 - (IBAction)openSelectedFiles:(id)sender {
     NSIndexSet *selectedItems = [tableView selectedRowIndexes];
-    for (NSUInteger i = 0; i < [files count]; i++) {
+    for (NSInteger i = 0; i < [files count]; i++) {
         if ([selectedItems containsIndex:i]) {
             [self openInFinder:i];
         }
@@ -357,7 +357,7 @@
 
 - (IBAction)editSelectedFile:(id)sender {
     NSIndexSet *selectedItems = [tableView selectedRowIndexes];
-    for (NSUInteger i = 0; i < [files count]; i++) {
+    for (NSInteger i = 0; i < [files count]; i++) {
         if ([selectedItems containsIndex:i]) {
             [self openInEditor:i];
             return;
@@ -367,7 +367,7 @@
 
 - (IBAction)removeSelectedFiles:(id)sender {
     NSIndexSet *selectedItems = [tableView selectedRowIndexes];
-    for (NSUInteger i = [files count]; i >= 0; i--) {
+    for (NSInteger i = [files count]; i >= 0; i--) {
         if ([selectedItems containsIndex:i]) {
             [files removeObjectAtIndex:i];
         }

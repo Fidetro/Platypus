@@ -95,10 +95,8 @@
     NSColor *bgColor = [backgroundColorWell color];
     NSColor *fgColor = [foregroundColorWell color];
     
-    BOOL darkMode = NO;
-    BOOL darkPossible = NO;
     if (@available(macOS 10.14, *)) {
-        darkMode = [[[NSAppearance currentAppearance] name] isEqualToString:NSAppearanceNameDarkAqua];
+        BOOL darkMode = [[[NSAppearance currentAppearance] name] isEqualToString:NSAppearanceNameDarkAqua];
         if (darkMode) {
             bgColor = [bgColor inverted];
             fgColor = [fgColor inverted];

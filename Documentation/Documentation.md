@@ -2,7 +2,7 @@
 
 # Documentation for Platypus 5.5.0
 
-Last updated on April 23rd, 2024. The latest version of this document can be found [here](https://sveinbjorn.org/platypus_documentation).
+Last updated on June 27th, 2025. The latest version of this document can be found [here](https://sveinbjorn.org/platypus_documentation).
 
 
 ## Introduction

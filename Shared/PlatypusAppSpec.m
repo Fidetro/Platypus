@@ -352,9 +352,9 @@
     [plistData writeToFile:appSettingsPlistPath atomically:YES];
     
     // Create icon
-    // .app/Contents/Resources/appIcon.icns
-    if (self[AppSpecKey_IconPath]) {
-        if ([WORKSPACE fileIsIcnsFileAtPath:self[AppSpecKey_IconPath]]) {
+    // .app/Contents/Resources/AppIcon.icns
+    if ([self[AppSpecKey_IconPath] length]) {
+        if ([FILEMGR fileExistsAtPath:self[AppSpecKey_IconPath]]) {
             [self report:@"Writing application icon"];
             NSString *iconPath = [resourcesPath stringByAppendingString:@"/AppIcon.icns"];
             [FILEMGR copyItemAtPath:self[AppSpecKey_IconPath] toPath:iconPath error:nil];
@@ -364,10 +364,10 @@
     }
     
     // Create document icon
-    // .app/Contents/Resources/docIcon.icns
+    // .app/Contents/Resources/DocIcon.icns
     if (self[AppSpecKey_DocIconPath] && ![self[AppSpecKey_DocIconPath] isEqualToString:@""]) {
         [self report:@"Writing document icon"];
-        NSString *docIconPath = [resourcesPath stringByAppendingString:@"/docIcon.icns"];
+        NSString *docIconPath = [resourcesPath stringByAppendingString:@"/DocIcon.icns"];
         [FILEMGR copyItemAtPath:self[AppSpecKey_DocIconPath] toPath:docIconPath error:nil];
     }
     
@@ -585,7 +585,7 @@
         
         // Document icon
         if (self[AppSpecKey_DocIconPath] && [FILEMGR fileExistsAtPath:self[AppSpecKey_DocIconPath]]) {
-            typesAndSuffixesDict[@"CFBundleTypeIconFile"] = @"docIcon.icns";
+            typesAndSuffixesDict[@"CFBundleTypeIconFile"] = @"DocIcon.icns";
         }
         
         // Set file types and suffixes
@@ -800,7 +800,7 @@
     // Create bundled files string
     NSString *bundledFilesCmdString = @"";
     NSArray *bundledFiles = self[AppSpecKey_BundledFiles];
-    for (NSUInteger i = 0; i < [bundledFiles count]; i++) {
+    for (NSInteger i = 0; i < [bundledFiles count]; i++) {
         NSString *str = shortOpts ? @"-f" : @"--bundled-file";
         bundledFilesCmdString = [bundledFilesCmdString stringByAppendingString:[NSString stringWithFormat:@"%@ '%@' ", str, bundledFiles[i]]];
     }

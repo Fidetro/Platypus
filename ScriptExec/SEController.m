@@ -1676,7 +1676,7 @@ static const NSUInteger detailsHeight = 224;
     }
     
     // Populate menu with output from task
-    for (NSUInteger i = [lines count] - 1; i >= 0; i--) {
+    for (NSInteger i = [lines count] - 1; i >= 0; i--) {
         NSString *line = lines[i];
         NSImage *icon = nil;
         BOOL disabled = NO;
