@@ -202,7 +202,7 @@
 }
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
-    return NO;
+    return YES;
 }
 
 #pragma mark - NSWindowDelegate

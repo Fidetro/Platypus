@@ -28,8 +28,6 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import <UniformTypeIdentifiers/UniformTypeIdentifiers.h>
-
 #import "ProfilesController.h"
 #import "PlatypusAppSpec.h"
 #import "PlatypusWindowController.h"
