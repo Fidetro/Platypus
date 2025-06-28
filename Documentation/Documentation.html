@@ -326,8 +326,8 @@ pre code, pre tt {
   <body>
     <div class="container">
       <div class="body-content"><p><img style="float: right; margin-left: 30px; margin-bottom: 20px;" width="128" height="128" src="images/platypus.png"  align="right"></p>
-<h1 id="documentation-for-platypus-5-4-1">Documentation for Platypus 5.5.0</h1>
-<p>Last updated on September 3rd, 2022. The latest version of this document can be found <a href="https://sveinbjorn.org/platypus_documentation">here</a>.</p>
+<h1 id="documentation-for-platypus-5-5-0">Documentation for Platypus 5.5.0</h1>
+<p>Last updated on June 27th, 2025. The latest version of this document can be found <a href="https://sveinbjorn.org/platypus_documentation">here</a>.</p>
 <h2 id="introduction">Introduction</h2>
 <h3 id="what-is-platypus-">What is Platypus?</h3>
 <p>Platypus is a developer tool that creates native macOS application wrappers around scripts. Scripts are thus transformed into regular applications that can be launched from the window environment – e.g. the Finder or the Dock – without requiring use of the command line interface.</p>
@@ -348,12 +348,12 @@ pre code, pre tt {
 <p>That being said, you may be able to add some interactive GUI elements using <a href="https://github.com/cocoadialog/cocoadialog">CocoaDialog</a>,
 <a href="https://www.bluem.net/en/projects/pashua/">Pashua</a> or <a href="#prompting-for-input-via-osascript-applescript">AppleScript</a>.</p>
 <h3 id="system-requirements">System Requirements</h3>
-<p>Both Platypus and the applications it generates require <strong>macOS 10.11</strong> or later and are provided as <strong>64-bit ARM/Intel</strong> binaries. If you want to target macOS 10.8-10.10, use <a href="https://sveinbjorn.org/files/software/platypus/platypus5.3.zip">version 5.3</a>.
+<p>Both Platypus and the applications it generates require <strong>macOS 10.13</strong> or later and are provided as <strong>64-bit ARM/Intel</strong> binaries. If you want to target macOS 10.8-10.12, use <a href="https://sveinbjorn.org/files/software/platypus/platypus5.3.zip">version 5.3</a>.
 If you want to target 10.6 and/or 32-bit Intel systems,
 <a href="https://sveinbjorn.org/files/software/platypus/platypus4.9.zip">version 4.9</a> continues to work just fine.</p>
 <h3 id="credits">Credits</h3>
 <p>Platypus was created by me, <a href="mailto:sveinbjorn@sveinbjorn.org">Sveinbjorn Thordarson</a>.</p>
-<p>Thanks go to Seth Willits, author of the AGIconFamily class used for icon handling in Platypus, Bryan D K Jones, author of <a href="https://github.com/bdkjones/VDKQueue">VDKQueue</a>, Gianni Ceccarelli for contributing code on authenticated script execution, Matt Gallagher for secure temp file code, James S. Derry and Paul Kim for improvements to the built-in editor, and Andy Matuschak for the <a href="https://sparkle-project.org">Sparkle</a> software update framework.</p>
+<p>Thanks go to Seth Willits, author of the AGIconFamily class used for icon handling in Platypus, Bryan D K Jones, author of <a href="https://github.com/bdkjones/VDKQueue">VDKQueue</a>, Gianni Ceccarelli for contributing code on script execution with escalated privileges, Matt Gallagher for secure temp file code, James S. Derry and Paul Kim for improvements to the built-in editor, and Andy Matuschak for the wonderful <a href="https://sparkle-project.org">Sparkle</a> software update framework.</p>
 <p>Finally, I am much indebted to <a href="http://www.wsanchez.net">Wilfredo Sanchez</a>, author of <a href="http://www.wsanchez.net/software">DropScript</a>, the proof-of-concept project which inspired me to create Platypus in the first place.</p>
 <h2 id="the-basics">The Basics</h2>
 <h3 id="basic-interface">Basic Interface</h3>
@@ -370,7 +370,7 @@ If you want to target 10.6 and/or 32-bit Intel systems,
 <p><img src="images/script_type.png" style="float: right; margin-left:20px; margin-bottom:20px;" width="135"></p>
 <p>Use <strong>Script Type</strong> to specify an interpreter for your script. Either select one of the predefined scripting languages from the the pop-up menu or type in the path to an interpreter binary.</p>
 <p>Most of the time, you do not need to specify this manually. Whenever you open a script file, Platypus automatically tries to determine its type based on the file suffix and shebang line (<code>#!</code>). If you have specified this meta-data in the script file itself, Platypus is usually smart enough to figure it out.</p>
-<p>Please note that the interpreter must exist on the system where the application is run. All the preset scripting language interpreters (except Node.js) are a standard part of all macOS installations.</p>
+<p>Please note that the interpreter must exist on the system where the application is run. Most of the preset scripting language interpreters are a standard part of all macOS installations.</p>
 <p><strong>Args</strong> let you add arguments to the script and/or its interpreter.</p>
 <p><img src="images/args.png" width="500"></p>
 <h3 id="interface">Interface</h3>
@@ -426,11 +426,11 @@ If you want to target 10.6 and/or 32-bit Intel systems,
 <p>Optionally, select a document icon (.icns file) for the files &quot;owned&quot; by your app.</p>
 <p>Selecting <strong>Accept Dropped Text</strong> makes the app accept dragged snippets of text. The text string is passed to the script via <code>stdin</code>.</p>
 <p><strong>Provide macOS Service</strong> makes the app register as a text-processing <a href="http://www.computerworld.com/article/2476298/mac-os-x/os-x-a-quick-guide-to-services-on-your-mac.html">Dynamic Service</a>, accessible from the <strong>Services</strong> submenu of application menus. You also need to enable this if you want your app to accept text snippets or URLs dropped on its Dock/Finder icon.</p>
-<p><strong>Register as URI scheme handler</strong> makes the app register as a handler for <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URI schemes</a>. These can be either standard URI schemes such as http or custom URI schemes of your choice (e.g. <code>myscheme://</code>). If your app is the default handler for a URI scheme, it will launch every time a URL matching the scheme is opened. The URL is then passed to the script as an argument.</p>
+<p><strong>Register as URI scheme handler</strong> makes the app register as a handler for <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URI schemes</a>. These can be either standard URI schemes such as <code>http://</code> or custom URI schemes of your choice (e.g. <code>myscheme://</code>). If your app is the default handler for a URI scheme, it will launch every time a URL matching the scheme is opened. The URL is then passed to the script as an argument.</p>
 <h3 id="build-time-options">Build-Time Options</h3>
-<p>Platypus allows you to <strong>create development versions</strong> of your script application. Ordinarily, the script and any bundled files are copied into the resulting application. If <strong>Development Version</strong> is selected in the <strong>Create app</strong> dialog, a symlink to the original script and bundled files is created instead. This allows you to edit your script file while simultaneously testing it as a Platypus app.</p>
+<p>Platypus allows you to <strong>create development versions</strong> of your script application. Ordinarily, the script and any bundled files are copied into the resulting application. If <strong>Create symlink</strong> is selected in the <strong>Create app</strong> dialog, a symlink to the original script and bundled files is created instead. This allows you to edit your script file and bundled files while simultaneously testing it as a Platypus app.</p>
 <p><img src="images/create_options.png" width="349"></p>
-<p><strong>Optimize Application</strong>: Strip and compile the nib file in the application in order to reduce its size. This makes the nib uneditable. Only works if Xcode is installed.</p>
+<p><strong>Strip nib</strong>: Strip and compile the nib file in the application in order to reduce its size. This makes the nib uneditable. Only works if Xcode is installed.</p>
 <h3 id="built-in-editor">Built-In Editor</h3>
 <p>Platypus includes a very basic built-in text editor for editing scripts. Press the <strong>Edit</strong> button to bring it up.</p>
 <p><img src="images/built-in_editor.png" width="600"></p>

@@ -373,7 +373,7 @@
         }
     }
     if ([tableView numberOfRows]) {
-        NSUInteger rowToSelect = [selectedItems firstIndex] - 1;
+        NSInteger rowToSelect = [selectedItems firstIndex] - 1;
         [tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:rowToSelect] byExtendingSelection:NO];
     }
     

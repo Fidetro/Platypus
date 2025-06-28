@@ -218,7 +218,7 @@
 }
 
 - (void)updateArgsButtonTitle {
-    NSUInteger numArgs = [interpreterArgs count] + [scriptArgs count];
+    NSInteger numArgs = [interpreterArgs count] + [scriptArgs count];
     if (numArgs) {
         [argsButton setTitle:[NSString stringWithFormat:@"Args (%ld)", (long)numArgs]];
     } else {
@@ -281,7 +281,7 @@
         return;
     }
     
-    NSUInteger rowToSelect = selectedRow - 1;
+    NSInteger rowToSelect = selectedRow - 1;
     
     [tableView reloadData];
     [tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:rowToSelect] byExtendingSelection:NO];

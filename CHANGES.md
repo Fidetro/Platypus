@@ -28,12 +28,13 @@
 
 ## Version history
 
-### For 5.5.0 - 24/05/2025
+### For 5.5.0 - 28/06/2025
 
 * Fixed bug where the argument settings window would lock up
 * Better support for Dark Mode
 * Platypus now requires macOS 10.13 or later
 * Preferences now named Settings according to new macOS convention
+
 
 ### For 5.4.1 - 22/10/2022
 
