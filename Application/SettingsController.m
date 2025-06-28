@@ -292,6 +292,10 @@
         [self uninstallCommandLineTool];
     } else {
         [self installCommandLineTool];
+        [Alerts sheetAlert:@"Command line tool installed"
+                   subText:@"The platypus command line tool has been installed at /usr/local/bin/platypus"
+                     style:NSAlertStyleInformational
+                 forWindow:[self window]];
     }
 }
 
