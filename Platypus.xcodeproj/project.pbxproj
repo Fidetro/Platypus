@@ -38,16 +38,11 @@
 		F4051DA01C1B5AF900587F1F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051D9E1C1B5AF900587F1F /* Common.m */; };
 		F4051DA11C1B5AF900587F1F /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051D9E1C1B5AF900587F1F /* Common.m */; };
 		F4051DA91C1C812600587F1F /* STReverseDNSTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F4051DA81C1C812600587F1F /* STReverseDNSTextField.m */; };
-		F40B227C1B28EFC7003C05ED /* platypus_clt in Copy Command Line Tool to Bundle */ = {isa = PBXBuildFile; fileRef = F4E1F6FC11F758FB007EE2E3 /* platypus_clt */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F4146CCF2149E76000BB36AD /* Interpreter_AWK.png in Resources */ = {isa = PBXBuildFile; fileRef = F4146CCE2149E76000BB36AD /* Interpreter_AWK.png */; };
-		F42A93DD21783EB900C40D46 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42A93D62178365C00C40D46 /* AppKit.framework */; };
-		F42A93DE21783EB900C40D46 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42A93D52178365C00C40D46 /* Foundation.framework */; };
 		F42E2EAB20A9E001003D2E89 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F42E2EAA20A9E001003D2E89 /* Credits.rtf */; };
 		F43142B01C03C742004EEF8C /* PlatypusScriptUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F48B1EDE17935BBC007DA173 /* PlatypusScriptUtils.m */; };
 		F436471421A1BD9D00A8749D /* platypus.1 in Resources */ = {isa = PBXBuildFile; fileRef = F45BB35A219224E900DC7A00 /* platypus.1 */; };
 		F436471521A1BDA600A8749D /* platypus.man.html in Resources */ = {isa = PBXBuildFile; fileRef = F45BB35C219224E900DC7A00 /* platypus.man.html */; };
-		F43C430E26876F060013914C /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = F43C430C26876F060013914C /* img1.png */; };
-		F43C430F26876F060013914C /* img2.png in Resources */ = {isa = PBXBuildFile; fileRef = F43C430D26876F060013914C /* img2.png */; };
 		F43C431126876F250013914C /* SEController.m in Sources */ = {isa = PBXBuildFile; fileRef = F43C431026876F250013914C /* SEController.m */; };
 		F445EA7B14FAB93300DCCDB3 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = F445EA7A14FAB93300DCCDB3 /* dsa_pub.pem */; };
 		F44A77431C1882DA003CCA7A /* InstallCommandLineTool.sh in Resources */ = {isa = PBXBuildFile; fileRef = F44A77401C1882DA003CCA7A /* InstallCommandLineTool.sh */; };
@@ -93,8 +88,6 @@
 		F481A4B52AE94169000E46DC /* ThemeObservingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F481A4B32AE94169000E46DC /* ThemeObservingTextView.m */; };
 		F482697F1BCAE1EE00169D8B /* TypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F482697E1BCAE1EE00169D8B /* TypeListController.m */; };
 		F48269831BCAF1D800169D8B /* UniformTypeListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F48269821BCAF1D800169D8B /* UniformTypeListController.m */; };
-		F484D45921A9DDAE006EE28D /* ScriptDocument.icns in Resources */ = {isa = PBXBuildFile; fileRef = F484D45721A9DDAE006EE28D /* ScriptDocument.icns */; };
-		F484D45A21A9DDAE006EE28D /* ProfileDocument.icns in Resources */ = {isa = PBXBuildFile; fileRef = F484D45821A9DDAE006EE28D /* ProfileDocument.icns */; };
 		F484D45B21AA005D006EE28D /* NSWorkspace+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D6F1B2E09280099D16E /* NSWorkspace+Additions.m */; };
 		F484D45E21AA03C2006EE28D /* NSFileManager+TempFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = F484D45C21AA03C1006EE28D /* NSFileManager+TempFiles.m */; };
 		F484D45F21AA03C2006EE28D /* NSFileManager+TempFiles.m in Sources */ = {isa = PBXBuildFile; fileRef = F484D45C21AA03C1006EE28D /* NSFileManager+TempFiles.m */; };
@@ -114,7 +107,7 @@
 		F4975DAD1B2E71EE0099D16E /* EditorController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D931B2E71EE0099D16E /* EditorController.m */; };
 		F4975DAE1B2E71EE0099D16E /* IconController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D951B2E71EE0099D16E /* IconController.m */; };
 		F4975DAF1B2E71EE0099D16E /* PlatypusWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D971B2E71EE0099D16E /* PlatypusWindowController.m */; };
-		F4975DB11B2E71EE0099D16E /* PrefsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D9B1B2E71EE0099D16E /* PrefsController.m */; };
+		F4975DB11B2E71EE0099D16E /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D9B1B2E71EE0099D16E /* SettingsController.m */; };
 		F4975DB21B2E71EE0099D16E /* ProfilesController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975D9D1B2E71EE0099D16E /* ProfilesController.m */; };
 		F4975DB41B2E71EE0099D16E /* ShellCommandController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA11B2E71EE0099D16E /* ShellCommandController.m */; };
 		F4975DB51B2E71EE0099D16E /* StatusItemSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4975DA31B2E71EE0099D16E /* StatusItemSettingsController.m */; };
@@ -127,7 +120,6 @@
 		F4975DC21B2E71FC0099D16E /* SyntaxChecker.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4975DBD1B2E71FC0099D16E /* SyntaxChecker.xib */; };
 		F498942224352DEE00051F43 /* Interpreter_Python_3.png in Resources */ = {isa = PBXBuildFile; fileRef = F498942024352DEE00051F43 /* Interpreter_Python_3.png */; };
 		F49DB78A25727B24009B6257 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78925727B24009B6257 /* Cocoa.framework */; };
-		F49DB78C25727B29009B6257 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78B25727B29009B6257 /* WebKit.framework */; };
 		F49DB78E25727B2F009B6257 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78D25727B2F009B6257 /* Security.framework */; };
 		F49DB79525727B48009B6257 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78925727B24009B6257 /* Cocoa.framework */; };
 		F49DB79625727B50009B6257 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78925727B24009B6257 /* Cocoa.framework */; };
@@ -150,7 +142,6 @@
 		F4E482C428C42CA400F99216 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78125727B05009B6257 /* Sparkle.framework */; };
 		F4E482C528C42CA400F99216 /* Sparkle.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F49DB78125727B05009B6257 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F4ECE5891E5F04A4008CC395 /* UriSchemesListController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4ECE5881E5F04A4008CC395 /* UriSchemesListController.m */; };
-		F4F14CBC1C662A4D002A2402 /* make_examples.pl in Resources */ = {isa = PBXBuildFile; fileRef = F4F14CAF1C640857002A2402 /* make_examples.pl */; };
 		F4F2F3BA1BF96C5C00FE463C /* VDKQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F2F3B91BF96C5C00FE463C /* VDKQueue.m */; };
 		F4FB338114FBFC7C00BAECEB /* License.html in Resources */ = {isa = PBXBuildFile; fileRef = F4FB338014FBFC7C00BAECEB /* License.html */; };
 		F4FE739911F792D5005FC23A /* PlatypusAppSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FE739711F792D5005FC23A /* PlatypusAppSpec.m */; };
@@ -172,13 +163,6 @@
 			remoteGlobalIDString = F4E1F6FB11F758FB007EE2E3;
 			remoteInfo = platypus;
 		};
-		F4B4F7182231B10000F3C073 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F48B774011F7661C00351575;
-			remoteInfo = ScriptExec;
-		};
 		F4DC73842164EF7900D79823 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -189,17 +173,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		F40B227B1B28EFBE003C05ED /* Copy Command Line Tool to Bundle */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 7;
-			files = (
-				F40B227C1B28EFC7003C05ED /* platypus_clt in Copy Command Line Tool to Bundle */,
-			);
-			name = "Copy Command Line Tool to Bundle";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4E482C628C42CA400F99216 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,8 +193,6 @@
 		F4051DA71C1C812600587F1F /* STReverseDNSTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STReverseDNSTextField.h; path = Shared/STReverseDNSTextField.h; sourceTree = "<group>"; };
 		F4051DA81C1C812600587F1F /* STReverseDNSTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STReverseDNSTextField.m; path = Shared/STReverseDNSTextField.m; sourceTree = "<group>"; };
 		F4146CCE2149E76000BB36AD /* Interpreter_AWK.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_AWK.png; sourceTree = "<group>"; };
-		F42A93D52178365C00C40D46 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F42A93D62178365C00C40D46 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F42A93E52178485C00C40D46 /* args.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = args.py; sourceTree = "<group>"; };
 		F42E2EAA20A9E001003D2E89 /* Credits.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
 		F43C430C26876F060013914C /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
@@ -292,8 +263,6 @@
 		F482697E1BCAE1EE00169D8B /* TypeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TypeListController.m; path = Application/TypeListController.m; sourceTree = "<group>"; };
 		F48269811BCAF1D800169D8B /* UniformTypeListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UniformTypeListController.h; path = Application/UniformTypeListController.h; sourceTree = "<group>"; };
 		F48269821BCAF1D800169D8B /* UniformTypeListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UniformTypeListController.m; path = Application/UniformTypeListController.m; sourceTree = "<group>"; };
-		F484D45721A9DDAE006EE28D /* ScriptDocument.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ScriptDocument.icns; sourceTree = "<group>"; };
-		F484D45821A9DDAE006EE28D /* ProfileDocument.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = ProfileDocument.icns; sourceTree = "<group>"; };
 		F484D45C21AA03C1006EE28D /* NSFileManager+TempFiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSFileManager+TempFiles.m"; path = "Shared/NSFileManager+TempFiles.m"; sourceTree = "<group>"; };
 		F484D45D21AA03C2006EE28D /* NSFileManager+TempFiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSFileManager+TempFiles.h"; path = "Shared/NSFileManager+TempFiles.h"; sourceTree = "<group>"; };
 		F484D46121AAE1DB006EE28D /* Interpreter_Node.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Interpreter_Node.png; sourceTree = "<group>"; };
@@ -326,8 +295,8 @@
 		F4975D951B2E71EE0099D16E /* IconController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IconController.m; path = Application/IconController.m; sourceTree = "<group>"; };
 		F4975D961B2E71EE0099D16E /* PlatypusWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlatypusWindowController.h; path = Application/PlatypusWindowController.h; sourceTree = "<group>"; };
 		F4975D971B2E71EE0099D16E /* PlatypusWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlatypusWindowController.m; path = Application/PlatypusWindowController.m; sourceTree = "<group>"; };
-		F4975D9A1B2E71EE0099D16E /* PrefsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefsController.h; path = Application/PrefsController.h; sourceTree = "<group>"; };
-		F4975D9B1B2E71EE0099D16E /* PrefsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrefsController.m; path = Application/PrefsController.m; sourceTree = "<group>"; };
+		F4975D9A1B2E71EE0099D16E /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingsController.h; path = Application/SettingsController.h; sourceTree = "<group>"; };
+		F4975D9B1B2E71EE0099D16E /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingsController.m; path = Application/SettingsController.m; sourceTree = "<group>"; };
 		F4975D9C1B2E71EE0099D16E /* ProfilesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfilesController.h; path = Application/ProfilesController.h; sourceTree = "<group>"; };
 		F4975D9D1B2E71EE0099D16E /* ProfilesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfilesController.m; path = Application/ProfilesController.m; sourceTree = "<group>"; };
 		F4975DA01B2E71EE0099D16E /* ShellCommandController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShellCommandController.h; path = Application/ShellCommandController.h; sourceTree = "<group>"; };
@@ -351,7 +320,6 @@
 		F49DB78925727B24009B6257 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F49DB78B25727B29009B6257 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		F49DB78D25727B2F009B6257 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		F49DB78F25727B34009B6257 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		F4A4338B0E04C962000523E7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Common.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		F4A8B5C82229ECB50049FA51 /* AGIconFamily.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGIconFamily.h; sourceTree = "<group>"; };
 		F4A8B5C92229ECB50049FA51 /* AGIconFamily.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGIconFamily.m; sourceTree = "<group>"; };
@@ -369,7 +337,6 @@
 		F4B4F70F2230902C00F3C073 /* MutableDictProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MutableDictProxy.h; path = Shared/MutableDictProxy.h; sourceTree = "<group>"; };
 		F4B4F7102230902C00F3C073 /* MutableDictProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MutableDictProxy.m; path = Shared/MutableDictProxy.m; sourceTree = "<group>"; };
 		F4B87C581B403A6E00F4B8BE /* build_release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_release.sh; sourceTree = "<group>"; };
-		F4C19A741BD1AB7300F411BD /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		F4C19A831BD1BFAB00F411BD /* STDragImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STDragImageView.h; path = Shared/STDragImageView.h; sourceTree = "<group>"; };
 		F4C19A841BD1BFAB00F411BD /* STDragImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STDragImageView.m; path = Shared/STDragImageView.m; sourceTree = "<group>"; };
 		F4D0F22F1C1DCEEE0065AD25 /* NSResponderNotifyingTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NSResponderNotifyingTableView.h; path = Shared/NSResponderNotifyingTableView.h; sourceTree = "<group>"; };
@@ -394,12 +361,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F49DB78C25727B29009B6257 /* WebKit.framework in Frameworks */,
 				F49DB78A25727B24009B6257 /* Cocoa.framework in Frameworks */,
 				F4E482C428C42CA400F99216 /* Sparkle.framework in Frameworks */,
-				F42A93DD21783EB900C40D46 /* AppKit.framework in Frameworks */,
 				F49DB78E25727B2F009B6257 /* Security.framework in Frameworks */,
-				F42A93DE21783EB900C40D46 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,11 +427,11 @@
 		29B97314FDCFA39411CA2CEA /* Platypus */ = {
 			isa = PBXGroup;
 			children = (
+				F4911FC7260A5D53004AC8CD /* macos.yml */,
 				F4975D7A1B2E462A0099D16E /* README.md */,
 				F4714B592BDC3C7B00827A48 /* CHANGES.md */,
 				F442E00B1EA38C7100BAD80C /* LICENSE.txt */,
 				F479672B224EB3EF00CA0746 /* Makefile */,
-				F4911FC7260A5D53004AC8CD /* macos.yml */,
 				F4F14CBB1C64264D002A2402 /* Scripts */,
 				F4DC074D11F629A40043764E /* Documentation */,
 				F4B4F71C2231ECD300F3C073 /* Common */,
@@ -502,13 +466,10 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F49DB78F25727B34009B6257 /* Accelerate.framework */,
+				F49DB78925727B24009B6257 /* Cocoa.framework */,
 				F49DB78D25727B2F009B6257 /* Security.framework */,
 				F49DB78B25727B29009B6257 /* WebKit.framework */,
-				F49DB78925727B24009B6257 /* Cocoa.framework */,
 				F49DB78125727B05009B6257 /* Sparkle.framework */,
-				F42A93D62178365C00C40D46 /* AppKit.framework */,
-				F42A93D52178365C00C40D46 /* Foundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -519,7 +480,6 @@
 				F45B1F241FF5618000A935D7 /* InterfaceTypeIcons */,
 				F45B1F051FF5617400A935D7 /* Interpreters */,
 				F44E007212298B7A00CAC9C2 /* Application */,
-				F43142B21C03F9E2004EEF8C /* Documents */,
 				F44E007312298B8C00CAC9C2 /* Status Menu */,
 			);
 			path = Icons;
@@ -541,15 +501,6 @@
 				F4975D771B2E09450099D16E /* STPathTextField.m */,
 			);
 			name = STPathTextField;
-			sourceTree = "<group>";
-		};
-		F43142B21C03F9E2004EEF8C /* Documents */ = {
-			isa = PBXGroup;
-			children = (
-				F484D45821A9DDAE006EE28D /* ProfileDocument.icns */,
-				F484D45721A9DDAE006EE28D /* ScriptDocument.icns */,
-			);
-			name = Documents;
 			sourceTree = "<group>";
 		};
 		F44587170FC386B500CD0C02 /* STPrivilegedTask */ = {
@@ -798,8 +749,8 @@
 				F4975DA11B2E71EE0099D16E /* ShellCommandController.m */,
 				F4975D921B2E71EE0099D16E /* EditorController.h */,
 				F4975D931B2E71EE0099D16E /* EditorController.m */,
-				F4975D9A1B2E71EE0099D16E /* PrefsController.h */,
-				F4975D9B1B2E71EE0099D16E /* PrefsController.m */,
+				F4975D9A1B2E71EE0099D16E /* SettingsController.h */,
+				F4975D9B1B2E71EE0099D16E /* SettingsController.m */,
 				F4975D9C1B2E71EE0099D16E /* ProfilesController.h */,
 				F4975D9D1B2E71EE0099D16E /* ProfilesController.m */,
 				F4A8B5CE222DD5800049FA51 /* InterpreterTextField.h */,
@@ -858,7 +809,6 @@
 		F4B4F71C2231ECD300F3C073 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F4C19A741BD1AB7300F411BD /* PrefixHeader.pch */,
 				F4A4338B0E04C962000523E7 /* Common.h */,
 				F4051D9E1C1B5AF900587F1F /* Common.m */,
 			);
@@ -952,13 +902,12 @@
 			buildConfigurationList = F41B217D085CD8FF00B63B0D /* Build configuration list for PBXNativeTarget "Platypus" */;
 			buildPhases = (
 				8D1107290486CEB800E47090 /* Resources */,
-				F40B227B1B28EFBE003C05ED /* Copy Command Line Tool to Bundle */,
 				F40B227E1B28F331003C05ED /* Run Script To copy ScriptExec binary, CLT and MainMenu.nib to Resources folder */,
 				F42622251C03B0DD0052BA33 /* Run Script To Set CFBundleVersion to Build Number */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				F49DB7A925727F65009B6257 /* ShellScript */,
 				F4E482C628C42CA400F99216 /* Embed Frameworks */,
+				F49DB7A925727F65009B6257 /* Sign All Binaries */,
 			);
 			buildRules = (
 			);
@@ -994,7 +943,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4E1F70611F75921007EE2E3 /* Build configuration list for PBXNativeTarget "platypus_clt" */;
 			buildPhases = (
-				F4B4F71A2231B18300F3C073 /* Copy and gzip MainMenu.nib files from ScriptExec */,
 				F4E1F6F911F758FB007EE2E3 /* Sources */,
 				F4E1F6FA11F758FB007EE2E3 /* Frameworks */,
 				F4FB337514FBDAD500BAECEB /* Run Script to Create Man Page HTML document */,
@@ -1003,7 +951,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F4B4F7192231B10000F3C073 /* PBXTargetDependency */,
 			);
 			name = platypus_clt;
 			productName = platypus;
@@ -1017,7 +964,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1640;
 				ORGANIZATIONNAME = "Sveinbjorn Thordarson";
 				TargetAttributes = {
 					F4E1F6FB11F758FB007EE2E3 = {
@@ -1029,15 +976,12 @@
 				};
 			};
 			buildConfigurationList = F41B2181085CD8FF00B63B0D /* Build configuration list for PBXProject "Platypus" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 1;
 			knownRegions = (
-				fr,
-				Base,
-				ja,
 				en,
-				de,
+				Base,
 			);
 			mainGroup = 29B97314FDCFA39411CA2CEA /* Platypus */;
 			projectDirPath = "";
@@ -1070,7 +1014,6 @@
 				F44A77431C1882DA003CCA7A /* InstallCommandLineTool.sh in Resources */,
 				F45B1F171FF5617500A935D7 /* Interpreter_PHP.png in Resources */,
 				F48002CB121AF042003FB5B3 /* images in Resources */,
-				F484D45A21A9DDAE006EE28D /* ProfileDocument.icns in Resources */,
 				F4146CCF2149E76000BB36AD /* Interpreter_AWK.png in Resources */,
 				F44E001D1229868100CAC9C2 /* DefaultStatusMenuIcon.png in Resources */,
 				F436471521A1BDA600A8749D /* platypus.man.html in Resources */,
@@ -1082,7 +1025,6 @@
 				F42E2EAB20A9E001003D2E89 /* Credits.rtf in Resources */,
 				F4975DC01B2E71FC0099D16E /* Platypus.xib in Resources */,
 				F44A77441C1882DA003CCA7A /* UninstallCommandLineTool.sh in Resources */,
-				F484D45921A9DDAE006EE28D /* ScriptDocument.icns in Resources */,
 				F45B1F201FF5617500A935D7 /* Interpreter_csh.png in Resources */,
 				F45B1F161FF5617500A935D7 /* Interpreter_sh.png in Resources */,
 				F484D46221AAE1DC006EE28D /* Interpreter_Node.png in Resources */,
@@ -1093,7 +1035,6 @@
 				F47B9F062606E9850076C3EC /* Interpreter_Python_2.png in Resources */,
 				F45B1F2B1FF5618000A935D7 /* InterfaceType_Status-Menu.png in Resources */,
 				F45B1F2D1FF5618000A935D7 /* InterfaceType_Text-Window.png in Resources */,
-				F4F14CBC1C662A4D002A2402 /* make_examples.pl in Resources */,
 				F45B1F301FF5618000A935D7 /* InterfaceType_None.png in Resources */,
 				F45B1F1D1FF5617500A935D7 /* Interpreter_env.png in Resources */,
 				F45B1F1B1FF5617500A935D7 /* Interpreter_tcsh.png in Resources */,
@@ -1113,8 +1054,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F44A77501C1887CC003CCA7A /* script in Resources */,
-				F43C430E26876F060013914C /* img1.png in Resources */,
-				F43C430F26876F060013914C /* img2.png in Resources */,
 				F44A774D1C1887CC003CCA7A /* AppSettings.plist in Resources */,
 				F48FB47321A7841B0000C0E9 /* PlatypusDefault.icns in Resources */,
 				F44A774F1C1887CC003CCA7A /* MainMenu.xib in Resources */,
@@ -1138,7 +1077,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#/bin/sh\n#\n\nRESOURCES_DIR=\"${TARGET_BUILD_DIR}/Platypus.app/Contents/Resources\"\n\necho \"Copying ScriptExec binary to application bundle\"\nSCRIPT_EXEC_APP_PATH=\"${BUILT_PRODUCTS_DIR}/ScriptExec.app\"\nSCRIPT_EXEC_BIN_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/MacOS/ScriptExec\"\nBIN_DEST=\"${RESOURCES_DIR}/ScriptExec\"\nrm \"${BIN_DEST}\" &> /dev/null\ncp \"${SCRIPT_EXEC_BIN_PATH}\" \"${BIN_DEST}\"\nstrip -x \"${BIN_DEST}\"\ngzip -c \"${BIN_DEST}\" > \"${BIN_DEST}.gz\"\nrm \"${BIN_DEST}\" &> /dev/null\n\necho \"Copying ScriptExec's MainMenu.nib to application bundle\"\nSCRIPT_EXEC_NIB_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/Resources/MainMenu.nib\"\nrm -r \"${RESOURCES_DIR}/MainMenu.nib\" &> /dev/null\ncp -r \"${SCRIPT_EXEC_NIB_PATH}\" \"${RESOURCES_DIR}/MainMenu.nib\"\n\nOPT_NIB=\"${RESOURCES_DIR}/MainMenu-optimized.nib\"\ncp -r \"${SCRIPT_EXEC_NIB_PATH}\" \"${OPT_NIB}\"\nibtool \"${OPT_NIB}\" --strip \"${OPT_NIB}\"\n\n# Gzip clt binary\necho \"Gzipping command line tool binary\"\nrm \"${RESOURCES_DIR}/platypus_clt.gz\" &> /dev/null\ngzip \"${RESOURCES_DIR}/platypus_clt\"\n\n# Gzip man page\necho \"Gzipping man page\"\nrm \"${RESOURCES_DIR}/platypus.1.gz\" &> /dev/null\ngzip \"${RESOURCES_DIR}/platypus.1\"\n";
+			shellScript = "#/bin/sh\n#\n\nRESOURCES_DIR=\"${TARGET_BUILD_DIR}/Platypus.app/Contents/Resources\"\n\necho \"Copying ScriptExec binary to application bundle\"\nSCRIPT_EXEC_APP_PATH=\"${BUILT_PRODUCTS_DIR}/ScriptExec.app\"\nSCRIPT_EXEC_BIN_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/MacOS/ScriptExec\"\nBIN_DEST=\"${RESOURCES_DIR}/ScriptExec\"\nrm \"${BIN_DEST}\" &> /dev/null\ncp \"${SCRIPT_EXEC_BIN_PATH}\" \"${BIN_DEST}\"\nstrip -x \"${BIN_DEST}\"\ngzip -c \"${BIN_DEST}\" > \"${BIN_DEST}.gz\"\nrm \"${BIN_DEST}\" &> /dev/null\n\necho \"Copying ScriptExec's MainMenu.nib to application bundle\"\nSCRIPT_EXEC_NIB_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/Resources/MainMenu.nib\"\nrm -r \"${RESOURCES_DIR}/MainMenu.nib\" &> /dev/null\ncp -r \"${SCRIPT_EXEC_NIB_PATH}\" \"${RESOURCES_DIR}/MainMenu.nib\"\n\n# echo \"Copying ScriptExec's optimized MainMenu.nib to application bundle\"\n# OPT_NIB=\"${RESOURCES_DIR}/MainMenu-optimized.nib\"\n# cp -r \"${SCRIPT_EXEC_NIB_PATH}\" \"${OPT_NIB}\"\n# ibtool \"${OPT_NIB}\" --strip \"${OPT_NIB}\"\n\n# Copy CLT binary\necho \"Copying command line tool binary to application bundle\"\nCLT_PATH=\"${BUILT_PRODUCTS_DIR}/platypus_clt\"\ncp \"${CLT_PATH}\" \"${RESOURCES_DIR}/platypus_clt\"\n\n# Gzip man page\necho \"Gzipping man page\"\nrm \"${RESOURCES_DIR}/platypus.1.gz\" &> /dev/null\ngzip \"${RESOURCES_DIR}/platypus.1\"\n";
 		};
 		F42622251C03B0DD0052BA33 /* Run Script To Set CFBundleVersion to Build Number */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1172,7 +1111,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "rm \"${PROJECT_DIR}/Tests/platypus\"\nln -s \"${TARGET_BUILD_DIR}/platypus_clt\" \"${PROJECT_DIR}/Tests/platypus\"\n\n";
+			shellScript = "# Create symlink to the binary in the Tests folder\n# so tests invoke latest built version of CLT\nrm \"${PROJECT_DIR}/Tests/platypus\"\nln -s \"${TARGET_BUILD_DIR}/platypus_clt\" \"${PROJECT_DIR}/Tests/platypus\"\n\n";
 		};
 		F4302B7B21C5A04A001C8BEC /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1190,9 +1129,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "#!/bin/sh\n# Read interpreter path from the script's shebang line\n# and set it as interpreter in AppSettings.plist\nAPPSETTINGS=\"${TARGET_BUILD_DIR}/ScriptExec.app/Contents/Resources/AppSettings.plist\"\nSCRIPT=\"${TARGET_BUILD_DIR}/ScriptExec.app/Contents/Resources/script\"\nINTERPRETER=$(head -n 1 $SCRIPT | cut -b 3-300 | tr -d '\\n')\n/usr/libexec/PlistBuddy -c \"Set :InterpreterPath ${INTERPRETER}\" \"${APPSETTINGS}\"\n\n\n\n\n\n\n\n\n\n\n\n\n";
+			shellScript = "#!/bin/sh\n# Read interpreter path from the script's shebang line\n# and set it as interpreter in AppSettings.plist\n# This is just for convenience when debugging and switching\n# often between interpreters. Better to control it via shebang.\nAPPSETTINGS=\"${TARGET_BUILD_DIR}/ScriptExec.app/Contents/Resources/AppSettings.plist\"\nSCRIPT=\"${TARGET_BUILD_DIR}/ScriptExec.app/Contents/Resources/script\"\nINTERPRETER=$(head -n 1 $SCRIPT | cut -b 3-300 | tr -d '\\n')\n/usr/libexec/PlistBuddy -c \"Set :InterpreterPath ${INTERPRETER}\" \"${APPSETTINGS}\"\n\n\n\n\n\n\n\n\n\n\n\n\n";
 		};
-		F49DB7A925727F65009B6257 /* ShellScript */ = {
+		F49DB7A925727F65009B6257 /* Sign All Binaries */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -1202,35 +1141,18 @@
 			);
 			inputPaths = (
 			);
+			name = "Sign All Binaries";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "exit 0\n# Only do this for release builds so CI testing works\n#if [ \"${CONFIGURATION}\" != \"Deployment\" ]; then\n#  exit 0\n#fi\n\n# We need to sign Autoupdate.app within Sparkle framework for update installation to work\nLOCATION=\"${BUILT_PRODUCTS_DIR}/Platypus.app/Contents/Frameworks/Sparkle.framework/Versions/A/Resources/Autoupdate.app\"\nIDENTITY=${EXPANDED_CODE_SIGN_IDENTITY_NAME}\n\ncodesign --verbose --force --deep --sign \"$IDENTITY\" \"$LOCATION\"\n";
-		};
-		F4B4F71A2231B18300F3C073 /* Copy and gzip MainMenu.nib files from ScriptExec */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Copy and gzip MainMenu.nib files from ScriptExec";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\nSCRIPT_EXEC_APP_PATH=\"${BUILT_PRODUCTS_DIR}/ScriptExec.app\"\nSCRIPT_EXEC_NIB_PATH=\"${SCRIPT_EXEC_APP_PATH}/Contents/Resources/MainMenu.nib\"\n\nNIB_DESIGNABLE=\"designable.nib\"\nNIB_KEYEDOBJECTS=\"keyedobjects.nib\"\n\nNIB_DESIGNABLE_PATH=\"${SCRIPT_EXEC_NIB_PATH}/${NIB_DESIGNABLE}\"\nNIB_KEYEDOBJECTS_PATH=\"${SCRIPT_EXEC_NIB_PATH}/${NIB_KEYEDOBJECTS}\"\n\ncp $NIB_DESIGNABLE_PATH \"${BUILT_PRODUCTS_DIR}/${NIB_DESIGNABLE}\"\ngzip -9 \"${BUILT_PRODUCTS_DIR}/${NIB_DESIGNABLE}\"\ncp $NIB_KEYEDOBJECTS_PATH \"${BUILT_PRODUCTS_DIR}/${NIB_KEYEDOBJECTS}\"\ngzip -9 \"${BUILT_PRODUCTS_DIR}/${NIB_KEYEDOBJECTS}\"\n\n\n\n\nexit 0\n\n\n\n\n\n\n\n\n\n\n";
+			shellScript = "#exit 0\n# We need to sign all binaries within Sparkle framework for update installation to work\n# Only do this for release builds so CI testing works\nif [ \"${CODE_SIGNING_REQUIRED}\" != \"YES\" ]; then\n  exit 0\nfi\n\n\nLOCATION1=\"${BUILT_PRODUCTS_DIR}/Platypus.app/Contents/Frameworks/Sparkle.framework/Versions/B/Updater.app/Contents/MacOS/Updater\"\nLOCATION2=\"${BUILT_PRODUCTS_DIR}/Platypus.app/Contents/Frameworks/Sparkle.framework/Versions/B/Autoupdate\"\nLOCATION3=\"${BUILT_PRODUCTS_DIR}/Platypus.app/Contents/Frameworks/Sparkle.framework/Versions/B/XPCServices/Downloader.xpc/Contents/MacOS/Downloader\"\nLOCATION4=\"${BUILT_PRODUCTS_DIR}/Platypus.app/Contents/Frameworks/Sparkle.framework\"\nLOCATION5=\"${BUILT_PRODUCTS_DIR}/Platypus.app\"\n\nIDENTITY=\"16A0188A9D74911B21953A33684437F70902BC30\"\n#${EXPANDED_CODE_SIGN_IDENTITY_NAME}\n\n#echo $IDENTITY\n\n\ncodesign --verbose --force -o runtime --deep --sign \"$IDENTITY\" \"$LOCATION1\"\ncodesign --verbose --force -o runtime --deep --sign \"$IDENTITY\" \"$LOCATION2\"\ncodesign --verbose --force -o runtime --deep --sign \"$IDENTITY\" \"$LOCATION3\"\ncodesign --verbose --force -o runtime --deep --sign \"$IDENTITY\" \"$LOCATION4\"\ncodesign --verbose --force -o runtime --deep --sign \"$IDENTITY\" \"$LOCATION5\"\n\n";
 		};
 		F4DC737D21644E0400D79823 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1244,6 +1166,7 @@
 		};
 		F4F14CBA1C640B29002A2402 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -1253,7 +1176,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/usr/bin/perl make_examples.pl\nif test $? -eq 0 ; then\n    open ExampleApps\nelse\n    exit $?\nfi";
+			shellScript = "/usr/bin/perl make_examples.pl\nif test $? -eq 0 ; then\n    open ExampleApps\nelse\n    exit $?\nfi\n";
 		};
 		F4FB337514FBDAD500BAECEB /* Run Script to Create Man Page HTML document */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -1288,7 +1211,7 @@
 				F4975DAA1B2E71EE0099D16E /* ArgsController.m in Sources */,
 				F4975D8B1B2E71B80099D16E /* main.m in Sources */,
 				F4975DB51B2E71EE0099D16E /* StatusItemSettingsController.m in Sources */,
-				F4975DB11B2E71EE0099D16E /* PrefsController.m in Sources */,
+				F4975DB11B2E71EE0099D16E /* SettingsController.m in Sources */,
 				F4975DB21B2E71EE0099D16E /* ProfilesController.m in Sources */,
 				F4051DA11C1B5AF900587F1F /* Common.m in Sources */,
 				F4ECE5891E5F04A4008CC395 /* UriSchemesListController.m in Sources */,
@@ -1364,11 +1287,6 @@
 			target = F4E1F6FB11F758FB007EE2E3 /* platypus_clt */;
 			targetProxy = F40B22781B28D763003C05ED /* PBXContainerItemProxy */;
 		};
-		F4B4F7192231B10000F3C073 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F48B774011F7661C00351575 /* ScriptExec */;
-			targetProxy = F4B4F7182231B10000F3C073 /* PBXContainerItemProxy */;
-		};
 		F4DC73852164EF7900D79823 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F4E1F6FB11F758FB007EE2E3 /* platypus_clt */;
@@ -1382,54 +1300,44 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_MISSING_PROTOTYPES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SHADOW = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_TEMP_DIR = "";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sparkle",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GENERATE_PKGINFO_FILE = NO;
-				GENERATE_PROFILING_CODE = YES;
-				HEADER_SEARCH_PATHS = "";
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-Wl,-rpath,@loader_path/../Frameworks",
 					"-Xlinker",
@@ -1440,8 +1348,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
 				PRODUCT_NAME = Platypus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SECTORDER_FLAGS = "";
 				VALIDATE_PRODUCT = NO;
 				WARNING_CFLAGS = (
 					"-Wno-gnu",
@@ -1454,58 +1360,46 @@
 		F41B217F085CD8FF00B63B0D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_MISSING_PROTOTYPES = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SHADOW = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_TEMP_DIR = "";
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sparkle",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_THREADSAFE_STATICS = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GENERATE_PKGINFO_FILE = NO;
-				HEADER_SEARCH_PATHS = "";
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
 					"-Wl,-rpath,@loader_path/../Frameworks",
 					"-Xlinker",
@@ -1516,9 +1410,6 @@
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
 				PRODUCT_NAME = Platypus;
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SECTORDER_FLAGS = "";
-				STRINGS_FILE_OUTPUT_ENCODING = binary;
 				VALIDATE_PRODUCT = YES;
 				WARNING_CFLAGS = (
 					"-Wno-gnu",
@@ -1528,143 +1419,73 @@
 			};
 			name = Deployment;
 		};
-		F41B2180085CD8FF00B63B0D /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = NO;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				COMBINE_HIDPI_IMAGES = YES;
-				CONFIGURATION_TEMP_DIR = "";
-				DEAD_CODE_STRIPPING = YES;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sparkle",
-				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_TRIGRAPHS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = NO;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = NO;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				HEADER_SEARCH_PATHS = "";
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
-				INFOPLIST_FILE = "Application/Resources/Platypus-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "";
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				INSTALL_PATH = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_CFLAGS = "";
-				OTHER_LDFLAGS = (
-					"-Wl,-rpath,@loader_path/../Frameworks",
-					"-Xlinker",
-					"-U",
-					"-Xlinker",
-					_objc_readClassPair,
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.Platypus;
-				PRODUCT_NAME = Platypus;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SECTORDER_FLAGS = "";
-				VALIDATE_PRODUCT = NO;
-				WARNING_CFLAGS = (
-					"-Wno-gnu",
-					"-Wpartial-availability",
-				);
-				WRAPPER_EXTENSION = app;
-			};
-			name = Default;
-		};
 		F41B2182085CD8FF00B63B0D /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_WARN_ASSIGN_ENUM = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_MISSING_PROTOTYPES = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = NO;
+				CLANG_WARN_SHADOW = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNUSED_LABEL = YES;
+				CLANG_WARN_UNUSED_PARAMETER = NO;
+				CLANG_WARN_UNUSED_VARIABLE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				CONFIGURATION_TEMP_DIR = "";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
+				ENABLE_TESTABILITY = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
-				GCC_STRICT_ALIASING = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = NO;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				GENERATE_PROFILING_CODE = YES;
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
-				PLIST_FILE_OUTPUT_FORMAT = XML;
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
-				STRIPFLAGS = "-x";
-				SYMROOT = build/;
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
 			name = Development;
@@ -1672,177 +1493,103 @@
 		F41B2183085CD8FF00B63B0D /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = NO;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_LINK_OBJC_RUNTIME = YES;
 				CLANG_WARN_ASSIGN_ENUM = NO;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
 				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_MISSING_PROTOTYPES = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = NO;
+				CLANG_WARN_SHADOW = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNDECLARED_SELECTOR = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN_UNUSED_FUNCTION = YES;
+				CLANG_WARN_UNUSED_LABEL = YES;
+				CLANG_WARN_UNUSED_PARAMETER = NO;
+				CLANG_WARN_UNUSED_VALUE = YES;
+				CLANG_WARN_UNUSED_VARIABLE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "";
-				CONFIGURATION_TEMP_DIR = "";
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
+				DEPLOYMENT_POSTPROCESSING = NO;
+				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = NO;
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_STRICT_ALIASING = YES;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = NO;
-				GCC_WARN_UNUSED_VALUE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				LINKER_DISPLAYS_MANGLED_NAMES = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				PLIST_FILE_OUTPUT_FORMAT = binary;
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				STRINGS_FILE_OUTPUT_ENCODING = binary;
-				STRIPFLAGS = "-x";
-				SYMROOT = build/;
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
 			name = Deployment;
 		};
-		F41B2184085CD8FF00B63B0D /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_LINK_OBJC_RUNTIME = YES;
-				CLANG_WARN_ASSIGN_ENUM = NO;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = NO;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "";
-				CONFIGURATION_TEMP_DIR = "";
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEPLOYMENT_POSTPROCESSING = YES;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = NO;
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_ENABLE_CPP_EXCEPTIONS = NO;
-				GCC_ENABLE_CPP_RTTI = NO;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_ENABLE_PASCAL_STRINGS = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = "";
-				GCC_STRICT_ALIASING = YES;
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = NO;
-				GCC_WARN_PEDANTIC = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_STRICT_SELECTOR_MATCH = NO;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_PARAMETER = NO;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IBC_FLATTEN_NIBS = YES;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INFOPLIST_PREPROCESS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				ONLY_ACTIVE_ARCH = NO;
-				OTHER_LDFLAGS = "";
-				PLIST_FILE_OUTPUT_FORMAT = binary;
-				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				STRINGS_FILE_OUTPUT_ENCODING = binary;
-				STRIPFLAGS = "-x";
-				SYMROOT = build/;
-				WARNING_CFLAGS = "-Wpartial-availability";
-			};
-			name = Default;
-		};
 		F48B774411F7661D00351575 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
-				EXCLUDED_SOURCE_FILE_NAMES = "";
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GENERATE_PKGINFO_FILE = NO;
 				IBC_FLATTEN_NIBS = NO;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
-				INFOPLIST_OUTPUT_FORMAT = xml;
-				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PLIST_FILE_OUTPUT_FORMAT = xml;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
 				PRODUCT_NAME = ScriptExec;
 				WARNING_CFLAGS = "-Wpartial-availability";
@@ -1852,70 +1599,52 @@
 		F48B774511F7661D00351575 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
-				EXCLUDED_SOURCE_FILE_NAMES = "PlatypusScriptAnalyser.*";
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GCC_UNROLL_LOOPS = NO;
-				GENERATE_PKGINFO_FILE = NO;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = "";
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				IBC_FLATTEN_NIBS = NO;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
 				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
-				INFOPLIST_OUTPUT_FORMAT = binary;
-				INSTALL_PATH = "";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PLIST_FILE_OUTPUT_FORMAT = binary;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
 				PRODUCT_NAME = ScriptExec;
 				WARNING_CFLAGS = "-Wpartial-availability";
 			};
 			name = Deployment;
 		};
-		F48B774611F7661D00351575 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				COMBINE_HIDPI_IMAGES = YES;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
-				EXCLUDED_SOURCE_FILE_NAMES = "";
-				GCC_CW_ASM_SYNTAX = NO;
-				GCC_ENABLE_PASCAL_STRINGS = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				GENERATE_PKGINFO_FILE = NO;
-				IBC_FLATTEN_NIBS = NO;
-				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
-				INFOPLIST_FILE = "ScriptExec/Resources/ScriptExec-Info.plist";
-				INFOPLIST_OTHER_PREPROCESSOR_FLAGS = "-traditional";
-				INSTALL_PATH = "";
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = org.sveinbjorn.ScriptExec;
-				PRODUCT_NAME = ScriptExec;
-				WARNING_CFLAGS = "-Wpartial-availability";
-			};
-			name = Default;
-		};
 		F4DC737F21644E0400D79823 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Development;
@@ -1924,27 +1653,33 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Deployment;
 		};
-		F4DC738121644E0400D79823 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEAD_CODE_STRIPPING = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Default;
-		};
 		F4E1F6FE11F758FC007EE2E3 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -1952,20 +1687,18 @@
 				DEVELOPMENT_TEAM = 5WX26Y89JP;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sparkle",
 				);
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				INSTALL_PATH = "";
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sveinbjorn.platypus-clt";
 				PRODUCT_NAME = platypus_clt;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1975,8 +1708,13 @@
 		F4E1F6FF11F758FC007EE2E3 /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
 				CODE_SIGN_STYLE = Manual;
@@ -1985,56 +1723,39 @@
 				DEVELOPMENT_TEAM = 5WX26Y89JP;
 				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Sparkle",
 				);
-				GCC_DYNAMIC_NO_PIC = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				INSTALL_PATH = "";
 				MACH_O_TYPE = mh_execute;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				OTHER_LDFLAGS = "";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.sveinbjorn.platypus-clt";
 				PRODUCT_NAME = platypus_clt;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Deployment;
 		};
-		F4E1F70011F758FC007EE2E3 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "Developer ID Application";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Developer ID Application";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 5WX26Y89JP;
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 5WX26Y89JP;
-				ENABLE_HARDENED_RUNTIME = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Sparkle",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = PrefixHeader.pch;
-				INSTALL_PATH = "";
-				MACH_O_TYPE = mh_execute;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.sveinbjorn.platypus-clt";
-				PRODUCT_NAME = platypus_clt;
-				PROVISIONING_PROFILE_SPECIFIER = "";
-			};
-			name = Default;
-		};
 		F4F14CB71C640B1E002A2402 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Development;
@@ -2043,21 +1764,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_NULLABLE_TO_NONNULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Deployment;
-		};
-		F4F14CB91C640B1E002A2402 /* Default */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				DEAD_CODE_STRIPPING = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Default;
 		};
 /* End XCBuildConfiguration section */
 
@@ -2067,7 +1789,6 @@
 			buildConfigurations = (
 				F41B217E085CD8FF00B63B0D /* Development */,
 				F41B217F085CD8FF00B63B0D /* Deployment */,
-				F41B2180085CD8FF00B63B0D /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;
@@ -2077,7 +1798,6 @@
 			buildConfigurations = (
 				F41B2182085CD8FF00B63B0D /* Development */,
 				F41B2183085CD8FF00B63B0D /* Deployment */,
-				F41B2184085CD8FF00B63B0D /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;
@@ -2087,7 +1807,6 @@
 			buildConfigurations = (
 				F48B774411F7661D00351575 /* Development */,
 				F48B774511F7661D00351575 /* Deployment */,
-				F48B774611F7661D00351575 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;
@@ -2097,7 +1816,6 @@
 			buildConfigurations = (
 				F4DC737F21644E0400D79823 /* Development */,
 				F4DC738021644E0400D79823 /* Deployment */,
-				F4DC738121644E0400D79823 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;
@@ -2107,7 +1825,6 @@
 			buildConfigurations = (
 				F4E1F6FE11F758FC007EE2E3 /* Development */,
 				F4E1F6FF11F758FC007EE2E3 /* Deployment */,
-				F4E1F70011F758FC007EE2E3 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;
@@ -2117,7 +1834,6 @@
 			buildConfigurations = (
 				F4F14CB71C640B1E002A2402 /* Development */,
 				F4F14CB81C640B1E002A2402 /* Deployment */,
-				F4F14CB91C640B1E002A2402 /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Deployment;

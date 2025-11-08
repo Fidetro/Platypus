@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -210,7 +210,7 @@
         interpreterPath = DEFAULT_INTERPRETER_PATH;
     } else {
         // Get args for interpreter
-        NSMutableArray *shebangCmdComponents = [NSMutableArray arrayWithArray:[PlatypusScriptUtils parseInterpreterInScriptFile:scriptPath]];
+        NSMutableArray *shebangCmdComponents = [[PlatypusScriptUtils parseInterpreterInScriptFile:scriptPath] mutableCopy];
         [shebangCmdComponents removeObjectAtIndex:0];
         self[AppSpecKey_InterpreterArgs] = shebangCmdComponents;
     }
@@ -352,8 +352,8 @@
     [plistData writeToFile:appSettingsPlistPath atomically:YES];
     
     // Create icon
-    // .app/Contents/Resources/appIcon.icns
-    if (self[AppSpecKey_IconPath]) {
+    // .app/Contents/Resources/AppIcon.icns
+    if ([self[AppSpecKey_IconPath] length]) {
         if ([FILEMGR fileExistsAtPath:self[AppSpecKey_IconPath]]) {
             [self report:@"Writing application icon"];
             NSString *iconPath = [resourcesPath stringByAppendingString:@"/AppIcon.icns"];
@@ -364,10 +364,10 @@
     }
     
     // Create document icon
-    // .app/Contents/Resources/docIcon.icns
+    // .app/Contents/Resources/DocIcon.icns
     if (self[AppSpecKey_DocIconPath] && ![self[AppSpecKey_DocIconPath] isEqualToString:@""]) {
         [self report:@"Writing document icon"];
-        NSString *docIconPath = [resourcesPath stringByAppendingString:@"/docIcon.icns"];
+        NSString *docIconPath = [resourcesPath stringByAppendingString:@"/DocIcon.icns"];
         [FILEMGR copyItemAtPath:self[AppSpecKey_DocIconPath] toPath:docIconPath error:nil];
     }
     
@@ -387,7 +387,7 @@
     
     // Copy bundled files to Resources folder
     // .app/Contents/Resources/*
-    NSInteger numBundledFiles = [self[AppSpecKey_BundledFiles] count];
+    NSUInteger numBundledFiles = [self[AppSpecKey_BundledFiles] count];
     if (numBundledFiles) {
         [self report:@"Copying %d bundled files", numBundledFiles];
     }
@@ -585,7 +585,7 @@
         
         // Document icon
         if (self[AppSpecKey_DocIconPath] && [FILEMGR fileExistsAtPath:self[AppSpecKey_DocIconPath]]) {
-            typesAndSuffixesDict[@"CFBundleTypeIconFile"] = @"docIcon.icns";
+            typesAndSuffixesDict[@"CFBundleTypeIconFile"] = @"DocIcon.icns";
         }
         
         // Set file types and suffixes
@@ -800,7 +800,7 @@
     // Create bundled files string
     NSString *bundledFilesCmdString = @"";
     NSArray *bundledFiles = self[AppSpecKey_BundledFiles];
-    for (int i = 0; i < [bundledFiles count]; i++) {
+    for (NSInteger i = 0; i < [bundledFiles count]; i++) {
         NSString *str = shortOpts ? @"-f" : @"--bundled-file";
         bundledFilesCmdString = [bundledFilesCmdString stringByAppendingString:[NSString stringWithFormat:@"%@ '%@' ", str, bundledFiles[i]]];
     }

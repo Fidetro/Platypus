@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -28,8 +28,8 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import "PlatypusWindowController.h"
 #import "Common.h"
+#import "PlatypusWindowController.h"
 #import "PlatypusAppSpec.h"
 #import "PlatypusScriptUtils.h"
 #import "IconController.h"
@@ -44,7 +44,7 @@
 #import "DropSettingsController.h"
 #import "SyntaxCheckerController.h"
 #import "BundledFilesController.h"
-#import "PrefsController.h"
+#import "SettingsController.h"
 #import "NSWorkspace+Additions.h"
 #import "Alerts.h"
 #import "NSColor+HexTools.h"
@@ -94,7 +94,7 @@
     IBOutlet ProfilesController *profilesController;
     IBOutlet TextSettingsController *textSettingsController;
     IBOutlet StatusItemSettingsController *statusItemSettingsController;
-    IBOutlet PrefsController *prefsController;
+    IBOutlet SettingsController *settingsController;
     IBOutlet BundledFilesController *bundledFilesController;
     
     VDKQueue *fileWatcherQueue;
@@ -114,7 +114,7 @@
 
 + (void)initialize {
     // Register the dictionary of defaults
-    [DEFAULTS registerDefaults:[PrefsController defaultsDictionary]];
+    [DEFAULTS registerDefaults:[SettingsController defaultsDictionary]];
 }
 
 - (void)awakeFromNib {
@@ -202,7 +202,7 @@
 }
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
-    return NO;
+    return YES;
 }
 
 #pragma mark - NSWindowDelegate
@@ -877,6 +877,8 @@
         nibSize = 0.60 * nibSize; // Compiled nib is approximtely 60% the size of original
     }
     estimatedAppSize += nibSize;
+    
+    estimatedAppSize -= 50 * 1024; // Just because it's more accurate!
     
     // Bundled files altogether
     estimatedAppSize += [bundledFilesController totalSizeOfFiles];

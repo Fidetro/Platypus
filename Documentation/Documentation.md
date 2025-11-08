@@ -1,8 +1,8 @@
 <img style="float: right; margin-left: 30px; margin-bottom: 20px;" width="128" height="128" src="images/platypus.png"  align="right">
 
-# Documentation for Platypus 5.4.2
+# Documentation for Platypus 5.5.0
 
-Last updated on April 23rd, 2024. The latest version of this document can be found [here](https://sveinbjorn.org/platypus_documentation).
+Last updated on June 27th, 2025. The latest version of this document can be found [here](https://sveinbjorn.org/platypus_documentation).
 
 
 ## Introduction
@@ -36,8 +36,7 @@ Platypus creates application bundles with a special executable binary that runs 
 
 Platypus is **not** a set of bindings between the native macOS APIs and scripting languages. It is not a full GUI development environment and is not intended for creating substantial applications with complex and dynamic user interaction. If you want to create advanced macOS applications, you should learn to program using the Cocoa APIs. Platypus is not and never will be a substitute for learning to use the native application programming interfaces.
 
-That being said, you may be able to add some interactive GUI elements using [CocoaDialog](https://github.com/cocoadialog/cocoadialog),
-[Pashua](https://www.bluem.net/en/projects/pashua/) or [AppleScript](#prompting-for-input-via-osascript-applescript).
+That being said, you may be able to add some interactive GUI elements using something like [Pashua](https://www.bluem.net/en/projects/pashua/) or [AppleScript](#prompting-for-input-via-osascript-applescript).
 
 
 ### System Requirements
@@ -51,10 +50,9 @@ If you want to target 10.6 and/or 32-bit Intel systems,
 
 Platypus was created by me, [Sveinbjorn Thordarson](mailto:sveinbjorn@sveinbjorn.org).
 
-Thanks go to Seth Willits, author of the AGIconFamily class used for icon handling in Platypus, Bryan D K Jones, author of [VDKQueue](https://github.com/bdkjones/VDKQueue), Gianni Ceccarelli for contributing code on authenticated script execution, Matt Gallagher for secure temp file code, James S. Derry and Paul Kim for improvements to the built-in editor, and Andy Matuschak for the [Sparkle](https://sparkle-project.org) software update framework.
+Thanks go to Seth Willits, author of the AGIconFamily class used for icon handling in Platypus, Bryan D K Jones, author of [VDKQueue](https://github.com/bdkjones/VDKQueue), Gianni Ceccarelli for contributing code on script execution with escalated privileges, Matt Gallagher for secure temp file code, James S. Derry and Paul Kim for improvements to the built-in editor, and Andy Matuschak for the wonderful [Sparkle](https://sparkle-project.org) software update framework.
 
 Finally, I am much indebted to [Wilfredo Sanchez](http://www.wsanchez.net), author of [DropScript](http://www.wsanchez.net/software), the proof-of-concept project which inspired me to create Platypus in the first place.
-
 
 
 ## The Basics
@@ -72,11 +70,11 @@ The name of your application.
 
 **Script Path**
 
-Path to the script you want to create an app from. Either use the **Select** button to select a script, or drag a script file on the Platypus window. You can also type in a path  manually (the text field supports supports shell-style tab autocompletion).
+Path to the script you want to create an app from. Either use the **Select** button to select a script, or drag a script file on the Platypus window. You can also type in a path  manually (the text field supports shell-style tab autocompletion).
 
 <img src="images/script_path.png" width="492" alt="Platypus Script Path">
     
-Once you have selected a script, you can press the **Edit** button to open it in your default text editor. Platypus defaults to using a very basic built-in text editor. You can change this in the **Preferences** if you want to use a more capable external editor.
+Once you have selected a script, you can press the **Edit** button to open it in your default text editor. Platypus defaults to using a very basic built-in text editor. You can change this in the **Settings** if you want to use a more capable external editor.
 
 The **New** button creates a script file in the Platypus Application Support folder and opens it in the default editor. The **Reveal** button reveals the script file in the Finder.
 
@@ -86,7 +84,7 @@ The **New** button creates a script file in the Platypus Application Support fol
 
 <img src="images/script_type.png" style="float: right; margin-left:20px; margin-bottom:20px;" width="135">
 
-Use **Script Type** to specify an interpreter for your script. Either select one of the predefined scripting languages from the the pop-up menu or type in the path to an interpreter binary.
+Use **Script Type** to specify an interpreter for your script. Either select one of the predefined scripting languages from the pop-up menu or type in the path to an interpreter binary.
 
 Most of the time, you do not need to specify this manually. Whenever you open a script file, Platypus automatically tries to determine its type based on the file suffix and shebang line (`#!`). If you have specified this meta-data in the script file itself, Platypus is usually smart enough to figure it out.
 
@@ -118,7 +116,7 @@ A small window with an indeterminate progress bar and a "Cancel" button appears 
 
 Shows a window with a text view containing script output. Please note that this text view is *not* a full, interactive terminal session, and cannot be used to prompt for user input via `stdin`. It does not support any of the standard terminal commands and cannot be used to display ncurses-based interfaces.
 
-The styling of the text view can configured under **Text Settings**.
+The styling of the text view can be configured under **Text Settings**.
 
 <img src="images/interface_textwindow.png" width="469">
 
@@ -160,7 +158,7 @@ Please note that having Platypus create the icon from an ordinary image file wil
 
 The **Identifier** text field specifies the unique identifier for the application. If you have already set an application name, this will default to something in the form of "org.yourusername.YourAppName".
 
-Every macOS application has a unique string called a bundle identifier, which takes the form of a reverse DNS name (e.g. "com.apple.iTunes" or "org.sveinbjorn.Platypus"). Platypus automatically formats the bundle identifier using the application name and default user name, but you can set it to whatever you want. The default bundle identifier prefix can be configured in **Preferences**.
+Every macOS application has a unique string called a bundle identifier, which takes the form of a reverse DNS name (e.g. "com.apple.iTunes" or "org.sveinbjorn.Platypus"). Platypus automatically formats the bundle identifier using the application name and default user name, but you can set it to whatever you want. The default bundle identifier prefix can be configured in **Settings**.
 
 <img src="images/author_identifier.png" width="427">
 
@@ -237,7 +235,7 @@ Platypus includes a very basic built-in text editor for editing scripts. Press t
 
 <img src="images/built-in_editor.png" width="600">
 
-A more capable external editor can be set in **Preferences.**
+A more capable external editor can be set in **Settings.**
 
 
 
@@ -253,7 +251,7 @@ This feature only works for interpreters that support syntax checking (bash, Per
 
 ### Show Shell Command
 
-Platypus includes a **command line tool** counterpart to the Platypus.app application, `platypus`, which can be installed into `/usr/local/bin/` via **Preferences**. The man page for this tool is available from the Help menu, and via the command line. There is also an [online version available](https://sveinbjorn.org/files/manpages/platypus.man.html)</a>.
+Platypus includes a **command line tool** counterpart to the Platypus.app application, `platypus`, which can be installed into `/usr/local/bin/` via **Settings**. The man page for this tool is available from the Help menu, and via the command line. There is also an [online version available](https://sveinbjorn.org/files/manpages/platypus.man.html).
 
 The command line tool does not in any way depend on the Platypus application once it has been installed.
 
@@ -263,11 +261,11 @@ The command line tool does not in any way depend on the Platypus application onc
 
 
 
-## Preferences
+## Settings
 
-The Platypus Preferences should be pretty self-explanatory. You can select an editor of choice, set the default author and bundle identifier settings, set the behaviour of Platypus on app creation, and install/uninstall the `platypus` command line tool.
+The Platypus Settings should be pretty self-explanatory. You can select an editor of choice, set the default author and bundle identifier settings, set the behaviour of Platypus on app creation, and install/uninstall the `platypus` command line tool.
 
-<img src="images/preferences.png" width="313">
+<img src="images/settings.png" width="313">
 
 
 
@@ -357,29 +355,6 @@ If your script prints the string "REFRESH\n" to STDOUT, the text output buffer w
 ### Loading a Website into a Web View
 
 If interface type was set to **Web View** and your script prints "LOCATION:http://some.url.com\n", the Web View will load the URL in question.
-
-
-
-### User interaction with CocoaDialog
-
-Platypus apps may be able to use [CocoaDialog](https://github.com/cocoadialog/cocoadialog) to construct scripts that prompt for user input with dialogs. As of writing, the CocoaDialog project seems to be dead and so the following instructions may be obsolete:
-
-* Download CocoaDialog
-* Add CocoaDialog.app to the list of Bundled Files.
-
-The following script shows how to query for input using the bundled copy of CocoaDialog:
-
-```
-#!/bin/bash
-
-CD="CocoaDialog.app/Contents/MacOS/CocoaDialog"
-
-rv=`$CD yesno-msgbox --string-output`
-$CD ok-msgbox --no-cancel --text "You pressed $rv"
-```
-
-This application will present the user with an alert and several buttons. When the user presses one of the buttons, a feedback dialog is generated notifying the user which button he pressed. While this particular script accomplishes nothing, it serves as a basic example of how to add interactive elements to the script.
-
 
 
 ### Creating a Status Menu app
@@ -524,7 +499,7 @@ If you come up with a particularly nifty use of Platypus and think it might make
 
 ### Updating Platypus
 
-Platypus uses <a href="https://sparkle-project.org">Sparkle</a> for updates. You can update to the latest version by selecting **Check for updates...** in the application menu. Future releases may or may not break your saved profiles. Consult the version change log for details.
+Platypus uses [Sparkle](https://sparkle-project.org) for updates. You can update to the latest version by selecting **Check for updates...** in the application menu. Future releases may or may not break your saved profiles. Consult the version change log for details.
 
 The AppCast XML file is available [here](https://sveinbjorn.org/files/appcasts/PlatypusAppcast.xml).
 
@@ -696,4 +671,4 @@ If you add a file named **Credits.rtf** or **Credits.html** to the bundled files
 
 ----
 
-Copyright &copy; 2003-2024 [Sveinbjorn Thordarson](mailto:sveinbjorn@sveinbjorn.org)
+Copyright &copy; 2003-2025 [Sveinbjorn Thordarson](mailto:sveinbjorn@sveinbjorn.org)
