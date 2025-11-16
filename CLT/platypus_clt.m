@@ -40,7 +40,6 @@
 #import <fcntl.h>
 #import <errno.h>
 #import <getopt.h>
-//#import <mach-o/getsect.h>
 
 #import "Common.h"
 #import "PlatypusAppSpec.h"
