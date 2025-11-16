@@ -41,7 +41,7 @@ That being said, you may be able to add some interactive GUI elements using some
 
 ### System Requirements
 
-Both Platypus and the applications it generates require **macOS 10.13** or later and are provided as **64-bit ARM/Intel** binaries. If you want to target macOS 10.8-10.12, use [version 5.3](https://sveinbjorn.org/files/software/platypus/platypus5.3.zip).
+Both Platypus and the applications it generates require **macOS 11** or later and are provided as **64-bit ARM/Intel** binaries. If you want to target macOS 10.8-10.15, use [version 5.4.1](https://sveinbjorn.org/files/software/platypus/platypus5.3.zip).
 If you want to target 10.6 and/or 32-bit Intel systems,
 [version 4.9](https://sveinbjorn.org/files/software/platypus/platypus4.9.zip) continues to work just fine.
 
