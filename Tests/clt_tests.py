@@ -1,4 +1,4 @@
-#!/usr/bin/python3 -u
+#!/usr/bin/env python3 -u
 #
 # Tests for platypus command line tool
 #
@@ -190,3 +190,7 @@ assert run_app(args=["a", "b", "c"]) == ["a", "b", "c"]
 
 
 # shutil.rmtree('MyApp.app')
+
+
+if __name__ == "main":
+    pass
