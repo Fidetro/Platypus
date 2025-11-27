@@ -7,9 +7,6 @@ This test suite uses pytest to verify the functionality of the 'platypus'
 command-line tool. It covers profile generation, app creation, and basic
 app execution.
 
-To run all tests:
-    pytest
-
 To run tests without launching the GUI application:
     pytest
 
@@ -29,8 +26,24 @@ import pytest
 
 # Path to the command-line tool binary
 CLT_BINARY = Path(__file__).parent / ".." / "products" / "platypus_clt"
-SCRIPTEXEC_BINARY = Path(__file__).parent / ".." / "products" / "ScriptExec.app" / "Contents" / "MacOS" / "ScriptExec"
-NIB_PATH = Path(__file__).parent / ".." / "products" / "ScriptExec.app" / "Contents" / "Resources" / "MainMenu.nib"
+SCRIPTEXEC_BINARY = (
+    Path(__file__).parent
+    / ".."
+    / "products"
+    / "ScriptExec.app"
+    / "Contents"
+    / "MacOS"
+    / "ScriptExec"
+)
+NIB_PATH = (
+    Path(__file__).parent
+    / ".."
+    / "products"
+    / "ScriptExec.app"
+    / "Contents"
+    / "Resources"
+    / "MainMenu.nib"
+)
 TEST_APP_NAME = "TestPlatypusApp"
 TEST_APP_PATH = Path(__file__).parent / f"{TEST_APP_NAME}.app"
 ARGS_SCRIPT_PATH = Path(__file__).parent / "args.py"
@@ -41,6 +54,10 @@ ARGS_OUT_FILE = Path(__file__).parent / "args.txt"
 assert CLT_BINARY.exists(), (
     "Platypus command-line tool binary not found at path {}".format(CLT_BINARY)
 )
+assert SCRIPTEXEC_BINARY.exists(), "ScriptExec binary not found at path {}".format(
+    SCRIPTEXEC_BINARY
+)
+assert NIB_PATH.exists(), "NIB file not found at path {}".format(NIB_PATH)
 assert ARGS_SCRIPT_PATH.exists(), "Args script not found at path {}".format(
     ARGS_SCRIPT_PATH
 )
