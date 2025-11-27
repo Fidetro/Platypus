@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -30,10 +30,6 @@
 
 /* This is the source code to the main controller for the binary
  bundled into Platypus-generated applications */
-
-#import <Security/Authorization.h>
-#import <WebKit/WebKit.h>
-#import <sys/stat.h>
 
 #import "Common.h"
 #import "SEController.h"
@@ -151,7 +147,7 @@
 }
 @end
 
-static const NSInteger detailsHeight = 224;
+static const NSUInteger detailsHeight = 224;
 
 @implementation SEController
 
@@ -234,16 +230,6 @@ static const NSInteger detailsHeight = 224;
                    subText:@"Script missing from application bundle."];
     }
     
-    // Make sure script is executable (and make it so if not)
-//    if ([FILEMGR isExecutableFileAtPath:scriptPath] == NO) {
-    //    NSNumber *permissions = [NSNumber numberWithUnsignedLong:493];
-    //    NSDictionary *attributes = @{ NSFilePosixPermissions:permissions };
-    //    [FILEMGR setAttributes:attributes ofItemAtPath:scriptPath error:nil];
-
-//        [Alerts fatalAlert:@"Corrupt app bundle"
-//                   subText:@"Script file is not executable."];
-//    }
-
     // Make sure script is a readable fiile
     if ([FILEMGR isReadableFileAtPath:scriptPath] == NO) {
         [Alerts fatalAlert:@"Corrupt app bundle"
@@ -529,7 +515,7 @@ static const NSInteger detailsHeight = 224;
 }
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
-    return NO;
+    return YES;
 }
 
 #pragma mark - NSWindowDelegate

@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -28,8 +28,8 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import "PlatypusWindowController.h"
 #import "Common.h"
+#import "PlatypusWindowController.h"
 #import "PlatypusAppSpec.h"
 #import "PlatypusScriptUtils.h"
 #import "IconController.h"
@@ -44,7 +44,7 @@
 #import "DropSettingsController.h"
 #import "SyntaxCheckerController.h"
 #import "BundledFilesController.h"
-#import "PrefsController.h"
+#import "SettingsController.h"
 #import "NSWorkspace+Additions.h"
 #import "Alerts.h"
 #import "NSColor+HexTools.h"
@@ -94,7 +94,7 @@
     IBOutlet ProfilesController *profilesController;
     IBOutlet TextSettingsController *textSettingsController;
     IBOutlet StatusItemSettingsController *statusItemSettingsController;
-    IBOutlet PrefsController *prefsController;
+    IBOutlet SettingsController *settingsController;
     IBOutlet BundledFilesController *bundledFilesController;
     
     VDKQueue *fileWatcherQueue;
@@ -114,7 +114,7 @@
 
 + (void)initialize {
     // Register the dictionary of defaults
-    [DEFAULTS registerDefaults:[PrefsController defaultsDictionary]];
+    [DEFAULTS registerDefaults:[SettingsController defaultsDictionary]];
 }
 
 - (void)awakeFromNib {
@@ -170,7 +170,7 @@
     [self updateInterfaceTypeMenu:NSMakeSize(16, 16)];
     
     // Main window accepts dragged text and dragged files
-    [[self window] registerForDraggedTypes:@[NSFilenamesPboardType, NSStringPboardType]];
+    [[self window] registerForDraggedTypes:@[NSFilenamesPboardType, NSPasteboardTypeString]];
     
     // If we haven't already loaded a profile via openfile delegate method
     // we set all fields to their defaults. Any profile must contain a name
@@ -202,7 +202,7 @@
 }
 
 - (BOOL)applicationSupportsSecureRestorableState:(NSApplication *)app {
-    return NO;
+    return YES;
 }
 
 #pragma mark - NSWindowDelegate
@@ -878,6 +878,8 @@
     }
     estimatedAppSize += nibSize;
     
+    estimatedAppSize -= 50 * 1024; // Just because it's more accurate!
+    
     // Bundled files altogether
     estimatedAppSize += [bundledFilesController totalSizeOfFiles];
     
@@ -954,9 +956,9 @@
         return YES;
     }
     // String
-    else if ([[pboard types] containsObject:NSStringPboardType]) {
+    else if ([[pboard types] containsObject:NSPasteboardTypeString]) {
         // Create a new script file with the dropped string, load it
-        NSString *draggedString = [pboard stringForType:NSStringPboardType];
+        NSString *draggedString = [pboard stringForType:NSPasteboardTypeString];
         NSString *newScriptPath = [self createNewScript:draggedString];
         if (newScriptPath) {
             [self loadScript:newScriptPath];
@@ -971,7 +973,7 @@
     
     if ([[[sender draggingPasteboard] types] containsObject:NSFilenamesPboardType]) {
         return NSDragOperationLink;
-    } else if ([[[sender draggingPasteboard] types] containsObject:NSStringPboardType]) {
+    } else if ([[[sender draggingPasteboard] types] containsObject:NSPasteboardTypeString]) {
         return NSDragOperationCopy;
     }
     
@@ -980,7 +982,7 @@
 
 // If we just created a file with a dragged string, we open it in default editor
 - (void)concludeDragOperation:(id <NSDraggingInfo> )sender {
-    if ([[[sender draggingPasteboard] types] containsObject:NSStringPboardType]) {
+    if ([[[sender draggingPasteboard] types] containsObject:NSPasteboardTypeString]) {
         [self editScript:self];
     }
 }

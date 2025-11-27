@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -28,7 +28,8 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
+
 #import <stdio.h>
 #import <unistd.h>
 #import <stdlib.h>
@@ -39,7 +40,6 @@
 #import <fcntl.h>
 #import <errno.h>
 #import <getopt.h>
-#include <mach-o/getsect.h>
 
 #import "Common.h"
 #import "PlatypusAppSpec.h"
@@ -53,7 +53,7 @@ static void PrintHelp(void);
 static void NSPrintErr(NSString *format, ...);
 static void NSPrint(NSString *format, ...);
 
-static const char optstring[] = "P:f:a:o:i:u:p:V:I:Q:AOZDBWRFNydlvhxX:T:G:C:b:g:n:K:Y:L:cqU:";
+static const char optstring[] = "P:f:a:o:i:u:p:V:I:Q:AOZDBWRFNydlvhxX:T:G:C:b:g:n:K:Y:L:cqU:E:e:";
 
 static struct option long_options[] = {
 
@@ -103,6 +103,9 @@ static struct option long_options[] = {
     {"symlink",                   no_argument,        0, 'd'},
     {"development-version",       no_argument,        0, 'd'}, // Backwards compatibility!
     {"optimize-nib",              no_argument,        0, 'l'},
+    {"nib-path",                  required_argument,  0, 'E'},
+    {"executable-path",           required_argument,  0, 'e'},
+    
     {"help",                      no_argument,        0, 'h'},
     {"version",                   no_argument,        0, 'v'},
     
@@ -230,7 +233,7 @@ int main(int argc, const char *argv[]) {
             case 'n':
             {
                 NSString *fontStr = @(optarg);
-                NSMutableArray *words = [NSMutableArray arrayWithArray:[fontStr componentsSeparatedByString:@" "]];
+                NSMutableArray *words = [[fontStr componentsSeparatedByString:@" "] mutableCopy];
                 if ([words count] < 2) {
                     NSPrintErr(@"Error: '%@' is not a valid font. Must be font name followed by size, e.g. 'Monaco 10'.", fontStr);
                     exit(EXIT_FAILURE);
@@ -486,6 +489,31 @@ int main(int argc, const char *argv[]) {
             }
                 break;
             
+            // Specify path of custom nib
+            case 'E':
+            {
+                NSString *nibPath = MakeAbsolutePath(@(optarg));
+                if (![fm fileExistsAtPath:nibPath]) {
+                    NSPrintErr(@"Error: No file exists at path '%@'.", nibPath);
+                    exit(EXIT_FAILURE);
+                }
+                properties[AppSpecKey_NibPath] = nibPath;
+            }
+                break;
+
+            
+            // Specify path of custom ScriptExec executable
+            case 'e':
+            {
+                NSString *executablePath = MakeAbsolutePath(@(optarg));
+                if (![fm fileExistsAtPath:executablePath]) {
+                    NSPrintErr(@"Error: No file exists at path '%@'.", executablePath);
+                    exit(EXIT_FAILURE);
+                }
+                properties[AppSpecKey_ExecutablePath] = executablePath;
+            }
+                break;
+            
             // Print version
             case 'v':
             {
@@ -736,6 +764,9 @@ Options:\n\
     -y --overwrite                     Overwrite any file/folder at destination path\n\
     -d --symlink                       Symlink to script and bundled files instead of copying\n\
     -l --optimize-nib                  Strip and compile bundled nib file to reduce size\n\
+    -E --nib-path                      Path to custom nib file\n\
+    -e --executable-path               Path to custom ScriptExec binary\n\
+\n\
     -h --help                          Prints help\n\
     -v --version                       Prints program name and version\n\
 \n\

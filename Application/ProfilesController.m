@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -108,9 +108,9 @@
     
     // Let's keep this code around if we ever want to use it:
     // Warn if created with a different version of Platypus
-//    	if ([spec[AppSpecKey_Creator] isEqualToString:PROGRAM_CREATOR_STAMP] == NO) {
-//    		[Alerts alert:@"Version clash"
-//                  subText: @"Profile was created with a different version of Platypus and may not load correctly."];
+//   if ([spec[AppSpecKey_Creator] isEqualToString:PROGRAM_CREATOR_STAMP] == NO) {
+//      [Alerts alert:@"Version clash"
+//            subText: @"Profile was created with a different version of Platypus and may not load correctly."];
 //        }
     [platypusController controlsFromAppSpec:spec];
     return YES;
@@ -162,7 +162,7 @@
     NSArray *examples = [self readExamplesList];
     
     // Create icon
-    NSImage *icon = [NSImage imageNamed:@"ProfileDocument"];
+    NSImage *icon = [WORKSPACE iconForFileType:@"platypus"];
     [icon setSize:NSMakeSize(16, 16)];
     
     // Create Examples menu
@@ -278,7 +278,7 @@
     
     if (![FILEMGR fileExistsAtPath:CMDLINE_TOOL_PATH]) {
         [Alerts alert:@"Command line tool not installed"
-              subText:@"To build the examples, you need to install the command line tool in Preferences."];
+              subText:@"To build the examples, you need to install the command line tool in Settings."];
         return;
     }
     

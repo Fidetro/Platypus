@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -390,7 +390,7 @@
     NSArray *interpreters = [self interpreters];
     for (NSDictionary *dict in interpreters) {
         if ([dict[@"Path"] isEqualToString:interpreterPath] && dict[@"SyntaxCheck"]) {
-            args = [NSMutableArray arrayWithArray:dict[@"SyntaxCheck"]];
+            args = [dict[@"SyntaxCheck"] mutableCopy];
             interpreterPath = dict[@"SyntaxCheckBinary"] ? dict[@"SyntaxCheckBinary"] : interpreterPath;
         }
     }

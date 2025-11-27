@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -133,7 +133,7 @@
 }
 
 - (void)updateFileSizeField {
-    //if there are no items
+    // If there are no items
     if ([files count] == 0) {
         _totalSizeOfFiles = 0;
         [bundleSizeTextField setStringValue:@""];
@@ -141,7 +141,7 @@
         return;
     }
     
-    //otherwise, loop through all files, calculate size in a separate queue
+    // Otherwise, loop through all files, calculate size in a separate queue
     [bundleSizeTextField setStringValue:@"Calculating size..."];
     
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^(void){
@@ -300,8 +300,8 @@
         }
     }
 
-    [[NSPasteboard generalPasteboard] declareTypes:@[NSStringPboardType] owner:self];
-    [[NSPasteboard generalPasteboard] setString:copyStr forType:NSStringPboardType];
+    [[NSPasteboard generalPasteboard] declareTypes:@[NSPasteboardTypeString] owner:self];
+    [[NSPasteboard generalPasteboard] setString:copyStr forType:NSPasteboardTypeString];
 }
 
 - (IBAction)addFilesToList:(id)sender {
@@ -373,7 +373,7 @@
         }
     }
     if ([tableView numberOfRows]) {
-        NSUInteger rowToSelect = [selectedItems firstIndex] - 1;
+        NSInteger rowToSelect = [selectedItems firstIndex] - 1;
         [tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:rowToSelect] byExtendingSelection:NO];
     }
     

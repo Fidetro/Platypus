@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -141,7 +141,7 @@
     NSMutableAttributedString *cmdString = [[NSMutableAttributedString alloc] initWithString:[interpreterTextField stringValue] attributes:defaultAttrs];
     
     // Interpreter args
-    for (int i = 0; i < [interpreterArgs count]; i++)
+    for (NSInteger i = 0; i < [interpreterArgs count]; i++)
     {
         NSString *a = [NSString stringWithFormat:@" %@", interpreterArgs[i]];
         NSMutableDictionary *attrs = [defaultAttrs mutableCopy];
@@ -175,7 +175,7 @@
     [cmdString appendAttributedString:scriptString];
     
     // Script args
-    for (int i = 0; i < [scriptArgs count]; i++)
+    for (NSInteger i = 0; i < [scriptArgs count]; i++)
     {
         NSString *a = [NSString stringWithFormat:@"%@ ", scriptArgs[i]];
         NSMutableDictionary *attrs = [defaultAttrs mutableCopy];
@@ -196,7 +196,7 @@
     }
     
     // File args
-    if ([isDroppableCheckbox state] == NSOnState) {
+    if ([isDroppableCheckbox state] == NSControlStateValueOn) {
         NSAttributedString *attrStr = [[NSAttributedString alloc] initWithString:@" [files ...]" attributes:defaultAttrs];
         [cmdString appendAttributedString:attrStr];
     }

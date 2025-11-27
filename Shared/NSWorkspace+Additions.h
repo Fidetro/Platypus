@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2003-2024, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
+    Copyright (c) 2003-2025, Sveinbjorn Thordarson <sveinbjorn@sveinbjorn.org>
     All rights reserved.
 
     Redistribution and use in source and binary forms, with or without modification,
@@ -28,8 +28,7 @@
     POSSIBILITY OF SUCH DAMAGE.
 */
 
-#import <Foundation/Foundation.h>
-#import <Cocoa/Cocoa.h>
+@import Cocoa;
 
 @interface NSWorkspace (Additions)
 
@@ -37,6 +36,9 @@
 - (UInt64)fileOrFolderSize:(NSString *)path;
 - (NSString *)fileSizeAsHumanReadableString:(UInt64)size;
 - (NSString *)fileOrFolderSizeAsHumanReadable:(NSString *)path;
+- (BOOL)isFileEmptyAtPath:(NSString *)path;
+- (BOOL)fileExistsAndIsExecutableAtPath:(NSString *)path;
+- (BOOL)fileIsIcnsFileAtPath:(NSString *)path;
 
 - (NSArray *)handlerApplicationsForFile:(NSString *)filePath;
 - (NSString *)defaultHandlerApplicationForFile:(NSString *)filePath;
