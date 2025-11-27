@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """A simple script that writes its command-line arguments to a file.
-This script is intended to be bundled into a Platypus application for testing
-argument passing."""
+This script is intended to be bundled into a Platypus application 
+for testing argument passing."""
 
 import sys
 import os
@@ -27,4 +27,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

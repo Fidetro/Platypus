@@ -28,12 +28,25 @@ from typing import List, Dict, Any, Union
 import pytest
 
 # Path to the command-line tool binary
-CLT_BINARY = Path(__file__).parent / "platypus"
+CLT_BINARY = Path(__file__).parent / ".." / "products" / "platypus_clt"
+SCRIPTEXEC_BINARY = Path(__file__).parent / ".." / "products" / "ScriptExec.app" / "Contents" / "MacOS" / "ScriptExec"
+NIB_PATH = Path(__file__).parent / ".." / "products" / "ScriptExec.app" / "Contents" / "Resources" / "MainMenu.nib"
 TEST_APP_NAME = "TestPlatypusApp"
 TEST_APP_PATH = Path(__file__).parent / f"{TEST_APP_NAME}.app"
 ARGS_SCRIPT_PATH = Path(__file__).parent / "args.py"
 DUMMY_ICON_PATH = Path(__file__).parent / "dummy.icns"
 ARGS_OUT_FILE = Path(__file__).parent / "args.txt"
+
+
+assert CLT_BINARY.exists(), (
+    "Platypus command-line tool binary not found at path {}".format(CLT_BINARY)
+)
+assert ARGS_SCRIPT_PATH.exists(), "Args script not found at path {}".format(
+    ARGS_SCRIPT_PATH
+)
+assert DUMMY_ICON_PATH.exists(), "Dummy icon not found at path {}".format(
+    DUMMY_ICON_PATH
+)
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -70,12 +83,18 @@ def create_app_with_args(args: List[str]):
         str(CLT_BINARY),
         *args,
         "--overwrite",
+        "--executable-path",
+        str(SCRIPTEXEC_BINARY),
+        "--nib-path",
+        str(NIB_PATH),
         "--name",
         TEST_APP_NAME,
         str(ARGS_SCRIPT_PATH),
         str(TEST_APP_PATH),
     ]
+    print(" ".join(cmd))
     subprocess.run(cmd, check=True, capture_output=True)
+
 
 def test_default_profile_sanity():
     """Check the basic sanity of the default profile."""
@@ -87,6 +106,7 @@ def test_default_profile_sanity():
     assert not plist["Authentication"]
     assert plist["Name"] != ""
     assert re.match(r"\w+\.\w+\.\w+", plist["Identifier"])
+
 
 def test_profile_generation_boolean_switches():
     """Test profile generation with boolean switches."""
@@ -113,6 +133,7 @@ def test_profile_generation_boolean_switches():
     plist = get_profile_plist_for_args(["-R"])
     assert plist["RemainRunning"] is False, "Flag -R should set RemainRunning to False"
 
+
 def test_profile_generation_string_options():
     """Test profile generation with string-based options."""
     string_opts = {
@@ -132,6 +153,7 @@ def test_profile_generation_string_options():
         plist = get_profile_plist_for_args([flag, value])
         assert plist[key] == value, f"Flag {flag} should set {key} to {value}"
 
+
 def test_profile_generation_data_options():
     """Test profile generation with options that take file paths (data)."""
     data_opts = {
@@ -142,6 +164,7 @@ def test_profile_generation_data_options():
     for flag, (key, value) in data_opts.items():
         plist = get_profile_plist_for_args([flag, str(value)])
         assert plist[key] is not None, f"Flag {flag} should set {key}"
+
 
 def test_profile_generation_multiple_arg_options():
     """Test profile generation for flags that accept multiple arguments."""
@@ -160,6 +183,7 @@ def test_profile_generation_multiple_arg_options():
     for flag, (key, values) in multiple_items_opts.items():
         plist = get_profile_plist_for_args([flag, "|".join(values)])
         assert all(item in plist[key] for item in values)
+
 
 def test_app_directory_structure_and_permissions():
     """Verify the app bundle's directory structure and permissions."""
@@ -195,12 +219,12 @@ def test_app_argument_handling():
     This is a GUI test and will be skipped unless --run-gui is specified.
     """
     create_app_with_args(["-R"])
-    
+
     app_executable = TEST_APP_PATH / "Contents/MacOS" / TEST_APP_NAME
     args_to_test = ["foo", "bar", "baz"]
-    
+
     subprocess.run([str(app_executable), *args_to_test], check=True)
-    
+
     assert ARGS_OUT_FILE.exists()
     with open(ARGS_OUT_FILE, "r") as f:
         lines = [line.strip() for line in f.readlines()]

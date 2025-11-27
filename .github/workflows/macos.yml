@@ -21,10 +21,11 @@ jobs:
       - name: Build app
         run: |
           make build_unsigned | xcpretty -c && exit ${PIPESTATUS[0]}
-      - name: Run tests
+      - name: Install Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.9"
+      - name: Run tests
       - run: |
           pip3 install pytest
           make clt_tests
