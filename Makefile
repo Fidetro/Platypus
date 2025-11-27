@@ -20,6 +20,8 @@ all: build_unsigned
 
 release: build_signed archives sparkle size
 
+clt: clean scriptexec cli
+
 clean:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
 	xcodebuild clean
@@ -50,6 +52,34 @@ build_unsigned:
         CODE_SIGNING_REQUIRED=NO \
         CODE_SIGNING_ALLOWED=NO \
         clean \
+        build
+
+cli:
+	@echo Building platypus_clt version $(VERSION) \(unsigned\)
+	@mkdir -p $(BUILD_DIR)
+	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
+	xcodebuild -parallelizeTargets \
+        -project "$(XCODE_PROJ)" \
+        -target "platypus_clt" \
+        -configuration "Deployment" \
+        CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        CODE_SIGN_IDENTITY="" \
+        CODE_SIGNING_REQUIRED=NO \
+        CODE_SIGNING_ALLOWED=NO \
+        build
+
+scriptexec:
+	@echo Building ScriptExec version $(VERSION) \(unsigned\)
+	@mkdir -p $(BUILD_DIR)
+	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
+	xcodebuild -parallelizeTargets \
+        -project "$(XCODE_PROJ)" \
+        -target "ScriptExec" \
+        -configuration "Deployment" \
+        CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        CODE_SIGN_IDENTITY="" \
+        CODE_SIGNING_REQUIRED=NO \
+        CODE_SIGNING_ALLOWED=NO \
         build
 
 archives:
