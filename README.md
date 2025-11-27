@@ -1,8 +1,8 @@
-[![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)]()
+[![macOS](https://img.shields.io/badge/macOS-000000?style=flat&logo=apple&logoColor=white)](https://en.wikipedia.org/wiki/MacOS)
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)
-[![Language](https://img.shields.io/badge/language-objective--c-lightgrey)]()
-[![Release](https://shields.io/github/v/release/sveinbjornt/Platypus?display_name=tag)]()
-[![Build](https://github.com/sveinbjornt/platypus/actions/workflows/macos.yml/badge.svg)]()
+[![Language](https://img.shields.io/badge/language-objective--c-lightgrey)](https://en.wikipedia.org/wiki/Objective-C)
+[![Release](https://shields.io/github/v/release/sveinbjornt/Platypus?display_name=tag)](https://github.com/sveinbjornt/Platypus/releases)
+[![Build](https://github.com/sveinbjornt/platypus/actions/workflows/macos.yml/badge.svg)](https://github.com/sveinbjornt/Platypus/actions)
 
 <img style="float: right; margin-left: 30px; margin-bottom: 20px;" width="196" height="196" src="Documentation/images/platypus.png" align="right">
 
@@ -101,6 +101,20 @@ $ make build_unsigned
 ```
 
 The resulting application bundle is created in the `products` directory.
+
+## Installing command line tool in CI environment
+
+```bash
+curl -O https://sveinbjorn.org/files/p.zip
+unzip -q p.zip
+cd Platypus.app/Contents/Resources
+sudo bash InstallCommandLineTool.sh
+platypus [arguments...]
+```
+
+This fetches the latest release version of the Platypus command line tool.
+To pin a particular version, download the zip archive for a particular
+release under [Releases](https://github.com/sveinbjornt/Platypus/releases).
 
 ## Some notes on the code
 
