@@ -764,8 +764,8 @@ Options:\n\
     -y --overwrite                     Overwrite any file/folder at destination path\n\
     -d --symlink                       Symlink to script and bundled files instead of copying\n\
     -l --optimize-nib                  Strip and compile bundled nib file to reduce size\n\
-    -E --nib-path                      Path to custom nib file\n\
-    -e --executable-path               Path to custom ScriptExec binary\n\
+    -E --nib-path [path]               Path to custom nib file\n\
+    -e --executable-path [path]        Path to custom ScriptExec binary\n\
 \n\
     -h --help                          Prints help\n\
     -v --version                       Prints program name and version\n\
