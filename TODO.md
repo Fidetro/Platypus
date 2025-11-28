@@ -22,7 +22,7 @@
 * Create platypus.rb Homebrew formula to install command line tool
 * Fix selection change when item is deleted from the Bundled Files List (select item above)
 * Performance optimization in the app build process (also include precompiled nib)
-
+* Bundle ScriptExec and MainMenu.nib into CLT Mach-O binary
 
 DONE * Harden CI testing for this old project
 DONE * Create more automated tests for command line tool and document existing tests
