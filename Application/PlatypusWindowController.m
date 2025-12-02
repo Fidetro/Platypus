@@ -869,7 +869,7 @@
     estimatedAppSize += [WORKSPACE fileOrFolderSize:[iconController icnsFilePath]];
     estimatedAppSize += [WORKSPACE fileOrFolderSize:[dropSettingsController docIconPath]];
     estimatedAppSize += [WORKSPACE fileOrFolderSize:[scriptPathTextField stringValue]];
-    // base64 uses 6 bytes, instead of 8, so multiply by 0.75
+    // base64 encoding expands data to ~1.33x, so estimate original size by mult. * 0.75
     estimatedAppSize += ([WORKSPACE fileOrFolderSize:[[NSBundle mainBundle] pathForResource:CMDLINE_SCRIPTEXEC_BIN_B64_NAME ofType:nil]] * 0.75);
     
     // Nib size is much smaller if compiled with ibtool

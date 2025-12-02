@@ -325,7 +325,7 @@
     } else {
         [FILEMGR copyItemAtPath:execSrcPath toPath:execDestPath error:nil];
     }
-    NSDictionary *execAttrDict = @{ NSFilePosixPermissions:[NSNumber numberWithShort:0777] };
+    NSDictionary *execAttrDict = @{ NSFilePosixPermissions:[NSNumber numberWithShort:0755] };
     [FILEMGR setAttributes:execAttrDict ofItemAtPath:execDestPath error:nil];
     
     // Strip signature from the copied ScriptExec binary
