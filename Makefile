@@ -24,7 +24,9 @@ clt: clean scriptexec cli
 
 clean:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
-	xcodebuild clean
+	xcodebuild -project "$(XCODE_PROJ)" -scheme "$(APP_NAME)" OBJROOT="$(BUILD_DIR)/intermediates" SYMROOT="$(BUILD_DIR)/intermediates" clean
+	xcodebuild -project "$(XCODE_PROJ)" -scheme "platypus_clt" OBJROOT="$(BUILD_DIR)/intermediates" SYMROOT="$(BUILD_DIR)/intermediates" clean
+	xcodebuild -project "$(XCODE_PROJ)" -scheme "ScriptExec" OBJROOT="$(BUILD_DIR)/intermediates" SYMROOT="$(BUILD_DIR)/intermediates" clean
 	rm -rf $(BUILD_DIR)/*
 
 build_signed:
@@ -33,9 +35,11 @@ build_signed:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
 	xcodebuild -parallelizeTargets \
         -project "$(XCODE_PROJ)" \
-        -target "$(APP_NAME)" \
+        -scheme "$(APP_NAME)" \
         -configuration "Deployment" \
         CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        OBJROOT="$(BUILD_DIR)/intermediates" \
+        SYMROOT="$(BUILD_DIR)/intermediates" \
         clean \
         build
 
@@ -45,9 +49,11 @@ build_unsigned:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
 	xcodebuild -parallelizeTargets \
         -project "$(XCODE_PROJ)" \
-        -target "$(APP_NAME)" \
+        -scheme "$(APP_NAME)" \
         -configuration "Deployment" \
         CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        OBJROOT="$(BUILD_DIR)/intermediates" \
+        SYMROOT="$(BUILD_DIR)/intermediates" \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO \
         CODE_SIGNING_ALLOWED=NO \
@@ -60,9 +66,11 @@ cli:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
 	xcodebuild -parallelizeTargets \
         -project "$(XCODE_PROJ)" \
-        -target "platypus_clt" \
+        -scheme "platypus_clt" \
         -configuration "Deployment" \
         CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        OBJROOT="$(BUILD_DIR)/intermediates" \
+        SYMROOT="$(BUILD_DIR)/intermediates" \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO \
         CODE_SIGNING_ALLOWED=NO \
@@ -74,9 +82,11 @@ scriptexec:
 	@xattr -w com.apple.xcode.CreatedByBuildSystem true $(BUILD_DIR)
 	xcodebuild -parallelizeTargets \
         -project "$(XCODE_PROJ)" \
-        -target "ScriptExec" \
+        -scheme "ScriptExec" \
         -configuration "Deployment" \
         CONFIGURATION_BUILD_DIR="$(BUILD_DIR)" \
+        OBJROOT="$(BUILD_DIR)/intermediates" \
+        SYMROOT="$(BUILD_DIR)/intermediates" \
         CODE_SIGN_IDENTITY="" \
         CODE_SIGNING_REQUIRED=NO \
         CODE_SIGNING_ALLOWED=NO \
