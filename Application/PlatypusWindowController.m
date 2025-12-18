@@ -1034,7 +1034,7 @@
 
 - (void)menuWillOpen:(NSMenu *)menu {
     if (menu == [interfaceTypePopupButton menu]) {
-        [self updateInterfaceTypeMenu:NSMakeSize(32, 32)];
+        [self updateInterfaceTypeMenu:NSMakeSize(16, 16)];
     }
 }
 
